@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚕ GBT小土豆全能开发者</title>
+<style>
+:root{--bg:#050508;--bgc:#0a0a10;--bgh:#0e0e18;--bd:#1a1a2e;--bdg:#1e1e35;--gn:#00cc66;--gnd:rgba(0,204,102,0.15);--bl:#00aaff;--bld:rgba(0,170,255,0.12);--pu:#7c3aed;--pud:rgba(124,58,237,0.15);--t1:#e8e8ed;--t2:#9090a0;--t3:#606078;--r:12px;--rl:20px;--fm:"Cascadia Code","Fira Code",Consolas,monospace;--fs:"Inter",-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg);color:var(--t1);font-family:var(--fs)}
+body{min-height:100vh;overflow-x:hidden;line-height:1.6}
+::selection{background:var(--gnd);color:var(--gn)}
+.grid-bg{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,black 40%,transparent 80%)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 600px 500px at 20% 10%,rgba(0,204,102,0.04),transparent),radial-gradient(ellipse 500px 400px at 80% 20%,rgba(0,170,255,0.04),transparent),radial-gradient(ellipse 400px 500px at 50% 60%,rgba(124,58,237,0.03),transparent)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;transition:all .3s}
+.nav.scrolled{background:rgba(5,5,8,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:var(--t1);text-decoration:none}
+.nav-brand .icon{font-size:1.5rem}
+.nav-brand .badge{font-size:0.65rem;padding:2px 8px;border-radius:20px;background:var(--gnd);color:var(--gn);border:1px solid rgba(0,204,102,0.25)}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{color:var(--t2);text-decoration:none;font-size:0.9rem;transition:color .2s;font-weight:500}
+.nav-links a:hover{color:var(--t1)}
+.nav-cta{padding:8px 18px;border-radius:8px;background:var(--gn);color:#050508!important;font-weight:600;font-size:0.85rem;transition:all .2s}
+.nav-cta:hover{box-shadow:0 0 20px rgba(0,204,102,0.3);transform:translateY(-1px)}
+.nav-mobile-btn{display:none;background:none;border:none;color:var(--t1);font-size:1.5rem;cursor:pointer}
+.section{position:relative;z-index:1;padding:100px 24px}
+.container{max-width:1200px;margin:0 auto}
+.container-sm{max-width:960px;margin:0 auto}
+.container-xs{max-width:720px;margin:0 auto}
+.hero{padding:160px 24px 120px;text-align:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:30px;background:var(--bgc);border:1px solid var(--bd);font-size:0.8rem;color:var(--t2);margin-bottom:32px;animation:fadeInUp .6s}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gn);box-shadow:0 0 8px var(--gn);animation:pulse-dot 2s infinite}
+.hero-title{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;margin-bottom:24px;animation:fadeInUp .6s .1s both}
+.hero-title .gradient{background:linear-gradient(135deg,var(--gn),var(--bl),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-desc{font-size:1.15rem;color:var(--t2);max-width:620px;margin:0 auto 40px;line-height:1.7;animation:fadeInUp .6s .2s both}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeInUp .6s .3s both}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-weight:600;font-size:0.95rem;text-decoration:none;cursor:pointer;transition:all .25s;border:none}
+.btn-primary{background:var(--gn);color:#050508}
+.btn-primary:hover{box-shadow:0 0 30px rgba(0,204,102,0.35);transform:translateY(-2px)}
+.btn-secondary{background:var(--bgc);color:var(--t1);border:1px solid var(--bd)}
+.btn-secondary:hover{border-color:var(--bl);box-shadow:0 0 30px rgba(0,170,255,0.1);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--t2);border:1px solid transparent}
+.btn-ghost:hover{color:var(--t1);border-color:var(--bd)}
+.terminal-section{padding:60px 24px 100px;position:relative;z-index:1}
+.terminal{max-width:800px;margin:0 auto;border-radius:var(--rl);background:rgba(10,10,16,0.9);border:1px solid var(--bd);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 30px rgba(0,204,102,0.12)}
+.terminal-header{display:flex;align-items:center;gap:8px;padding:14px 18px;background:rgba(15,15,25,0.8);border-bottom:1px solid var(--bd)}
+.terminal-dot{width:12px;height:12px;border-radius:50%}
+.terminal-dot.red{background:#ff5f57}.terminal-dot.yellow{background:#febc2e}.terminal-dot.green{background:#28c840}
+.terminal-title{margin-left:12px;font-family:var(--fm);font-size:0.75rem;color:var(--t3)}
+.terminal-body{padding:20px 24px;font-family:var(--fm);font-size:0.85rem;line-height:1.8;overflow-x:auto}
+.terminal-body .line{display:flex;gap:12px;opacity:0;animation:slideIn .4s forwards}
+.terminal-body .line:nth-child(1){animation-delay:.2s}
+.terminal-body .line:nth-child(2){animation-delay:.5s}
+.terminal-body .line:nth-child(3){animation-delay:.8s}
+.terminal-body .line:nth-child(4){animation-delay:1.1s}
+.terminal-body .line:nth-child(5){animation-delay:1.4s}
+.terminal-body .line:nth-child(6){animation-delay:1.7s}
+.terminal-body .line:nth-child(7){animation-delay:2.0s}
+.terminal-body .line:nth-child(8){animation-delay:2.3s}
+.terminal-body .line:nth-child(9){animation-delay:2.6s}
+.terminal-prompt{color:var(--gn);white-space:nowrap}
+.terminal-cmd{color:var(--t1)}.terminal-output{color:var(--t3)}
+.terminal-success{color:var(--gn)}.terminal-info{color:var(--bl)}.terminal-highlight{color:var(--pu)}
+.terminal-cursor{display:inline-block;width:8px;height:16px;background:var(--gn);animation:blink 1s step-end infinite;vertical-align:text-bottom}
+.stats-section{padding:60px 24px 100px;position:relative;z-index:1}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border-radius:var(--rl);overflow:hidden;border:1px solid var(--bd);max-width:1000px;margin:0 auto}
+.stats-item{background:var(--bgc);padding:32px 24px;text-align:center;transition:all .3s}
+.stats-item:hover{background:var(--bgh)}
+.stats-value{font-size:2.5rem;font-weight:800;color:var(--t1);letter-spacing:-0.02em;margin-bottom:6px}
+.stats-value.gn{color:var(--gn)}.stats-value.bl{color:var(--bl)}.stats-value.pu{color:var(--pu)}
+.stats-label{font-size:0.85rem;color:var(--t3);font-weight:500}
+.features-section{padding:80px 24px 100px;position:relative;z-index:1}
+.section-label{text-align:center;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gn);margin-bottom:16px;font-weight:600}
+.section-title{text-align:center;font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:16px}
+.section-subtitle{text-align:center;color:var(--t2);max-width:500px;margin:0 auto 60px;font-size:1.05rem}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px;max-width:1100px;margin:0 auto}
+.feature-card{background:var(--bgc);border:1px solid var(--bd);border-radius:var(--r);padding:28px 24px;transition:all .35s;position:relative;overflow:hidden}
+.feature-card:hover{transform:translateY(-4px);border-color:var(--bdg);box-shadow:0 12px 32px rgba(0,0,0,0.4)}
+.feature-icon{font-size:2rem;margin-bottom:16px;display:block}
+.feature-card h3{font-size:1.15rem;font-weight:700;margin-bottom:8px;color:var(--t1)}
+.feature-card p{font-size:0.9rem;color:var(--t2);line-height:1.6}
+.feature-tag{display:inline-block;margin-top:12px;padding:3px 10px;border-radius:6px;font-size:0.7rem;font-weight:600;background:var(--gnd);color:var(--gn);border:1px solid rgba(0,204,102,0.2)}
+.tech-section{padding:80px 24px 100px;position:relative;z-index:1}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;max-width:900px;margin:0 auto}
+.tech-item{background:var(--bgc);border:1px solid var(--bd);border-radius:var(--r);padding:16px 20px;text-align:center;font-family:var(--fm);font-size:0.8rem;color:var(--t2);transition:all .3s}
+.tech-item:hover{color:var(--gn);border-color:var(--gn);box-shadow:0 0 30px rgba(0,204,102,0.12);transform:translateY(-2px)}
+.pricing-section{padding:80px 24px 100px;position:relative;z-index:1}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
+.pricing-card{background:var(--bgc);border:1px solid var(--bd);border-radius:var(--rl);padding:36px 28px;transition:all .35s;position:relative}
+.pricing-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,0.4)}
+.pricing-card.popular{border-color:var(--gn);box-shadow:0 0 0 4px var(--gnd)}
+.pricing-card.popular::after{content:"\6700\53d7\6b22\8fce";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gn);color:#050508;padding:4px 16px;border-radius:20px;font-size:0.75rem;font-weight:700}
+.pricing-plan{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--t3);margin-bottom:8px;font-weight:600}
+.pricing-price{font-size:2.8rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:4px}
+.pricing-price .currency{font-size:1.4rem;vertical-align:super}
+.pricing-price .period{font-size:0.9rem;color:var(--t3);font-weight:500}
+.pricing-desc{color:var(--t2);font-size:0.85rem;margin-bottom:24px}
+.pricing-features{list-style:none;margin-bottom:28px}
+.pricing-features li{padding:8px 0;font-size:0.88rem;color:var(--t2);display:flex;align-items:center;gap:10px}
+.pricing-features li::before{content:"\2713";color:var(--gn);font-weight:700;flex-shrink:0}
+.pricing-features li.disabled{color:var(--t3)}
+.pricing-features li.disabled::before{content:"\2014";color:var(--t3)}
+.pricing-btn{display:block;text-align:center;padding:12px 24px;border-radius:10px;font-weight:600;font-size:0.9rem;text-decoration:none;transition:all .25s}
+.pricing-btn.primary{background:var(--gn);color:#050508}
+.pricing-btn.primary:hover{box-shadow:0 0 28px rgba(0,204,102,0.35)}
+.pricing-btn.secondary{background:transparent;color:var(--t1);border:1px solid var(--bd)}
+.pricing-btn.secondary:hover{border-color:var(--bl);box-shadow:0 0 30px rgba(0,170,255,0.1)}
+.cta-section{padding:100px 24px 120px;position:relative;z-index:1;text-align:center}
+.cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:300px;background:radial-gradient(ellipse,rgba(0,204,102,0.08),transparent);pointer-events:none}
+.footer{padding:48px 24px;border-top:1px solid var(--bd);position:relative;z-index:1}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.footer-brand{display:flex;align-items:center;gap:8px;color:var(--t2);font-size:0.85rem}
+.footer-links{display:flex;gap:24px;list-style:none;flex-wrap:wrap}
+.footer-links a{color:var(--t3);text-decoration:none;font-size:0.8rem;transition:color .2s}
+.footer-links a:hover{color:var(--t1)}
+.footer-bottom{text-align:center;padding-top:32px;color:var(--t3);font-size:0.78rem}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes pulse-dot{50%{box-shadow:0 0 16px var(--gn),0 0 24px var(--gn)}}
+@media(max-width:900px){.nav-links{display:none}.nav-mobile-btn{display:block}.stats-grid{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:1fr;max-width:400px}.terminal-body{font-size:0.72rem;padding:16px}.hero{padding:120px 20px 80px}.features-grid{grid-template-columns:1fr;max-width:450px}.tech-grid{grid-template-columns:repeat(3,1fr)}.footer-inner{flex-direction:column;text-align:center}}
+@media(max-width:500px){.stats-grid{grid-template-columns:1fr}.tech-grid{grid-template-columns:repeat(2,1fr)}.hero-actions{flex-direction:column;align-items:center}.hero-title{font-size:2rem}.btn{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a href="#" class="nav-brand"><span class="icon">⚕</span><span>GBT小土豆</span><span class="badge">v3.0</span></a>
+<ul class="nav-links">
+<li><a href="#features">能力矩阵</a></li>
+<li><a href="#tech">技术栈</a></li>
+<li><a href="#pricing">定价</a></li>
+<li><a href="#terminal">终端</a></li>
+<li><a href="#cta" class="nav-cta">立即开始</a></li>
+</ul>
+<button class="nav-mobile-btn" id="mobileBtn" aria-label="菜单">☰</button>
+</div>
+</nav>
+<section class="hero" id="hero">
+<div class="hero-badge"><span class="dot"></span> AI Brain v3.0 · 137节点 4200边</div>
+<h1 class="hero-title">全能AI开发者<br><span class="gradient">自进化·自部署·自渗透</span></h1>
+<p class="hero-desc">⚕ GBT小土豆全能开发者 — 融合记忆持久化、实时热点监控、多维推演分析、3D大脑镜像与30+安全渗透工具的下一代AI开发平台。一键部署，永不断连。</p>
+<div class="hero-actions">
+<a href="#terminal" class="btn btn-primary"><span>⚡</span> 一键部署</a>
+<a href="#features" class="btn btn-secondary"><span>🔍</span> 探索能力</a>
+<a href="#pricing" class="btn btn-ghost">查看定价 →</a>
+</div>
+</section>
+<section class="terminal-section" id="terminal">
+<div class="container-sm">
+<div class="section-label">Terminal Demo</div>
+<h2 class="section-title">命令行即是一切</h2>
+<p class="section-subtitle">一条命令完成从部署到渗透的全流程操作</p>
+<div class="terminal">
+<div class="terminal-header">
+<span class="terminal-dot red"></span><span class="terminal-dot yellow"></span><span class="terminal-dot green"></span>
+<span class="terminal-title">GBT Terminal — PowerShell 7.4</span>
+</div>
+<div class="terminal-body">
+<div class="line"><span class="terminal-prompt">PS C:\Users\ADMIN&gt;</span><span class="terminal-cmd"> irm bootstrap.ps1 | iex</span></div>
+<div class="line"><span class="terminal-output">  ⚕ GBT Bootstrap v3.0 — 正在初始化环境...</span></div>
+<div class="line"><span class="terminal-output">  √ Node.js v24 · √ Python 3.12 · √ Git 2.47 · √ Ollama</span></div>
+<div class="line"><span class="terminal-success">  ✅ 部署完成！用时 2.3s — 输入 GBT 启动</span></div>
+<div class="line"><span class="terminal-prompt">PS C:\Users\ADMIN&gt;</span><span class="terminal-cmd"> GBT</span></div>
+<div class="line"><span class="terminal-info">  ⚕ GBT小土豆全能开发者 v3.0 已就绪。137节点·4200边·32工具链。</span></div>
+<div class="line"><span class="terminal-prompt">PS C:\Users\ADMIN&gt;</span><span class="terminal-cmd"> GBT sec smart-dispatch</span></div>
+<div class="line"><span class="terminal-highlight">  ⚔ 智能调度渗透任务 → nmap → nuclei → sqlmap → metasploit → 报告</span></div>
+<div class="line"><span class="terminal-prompt">PS C:\Users\ADMIN&gt;</span><span class="terminal-cmd"> GBT desktop-control</span><span class="terminal-cursor"></span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="stats-section">
+<div class="stats-grid">
+<div class="stats-item"><div class="stats-value gn">137</div><div class="stats-label">大脑节点数</div></div>
+<div class="stats-item"><div class="stats-value bl">4,200</div><div class="stats-label">神经网络边</div></div>
+<div class="stats-item"><div class="stats-value pu">30+</div><div class="stats-label">安全渗透工具</div></div>
+<div class="stats-item"><div class="stats-value gn">9D</div><div class="stats-label">推演分析维度</div></div>
+</div>
+</section>
+<section class="features-section" id="features">
+<div class="container">
+<div class="section-label">能力矩阵</div>
+<h2 class="section-title">十二项核心能力</h2>
+<p class="section-subtitle">从记忆持久化到全自动渗透，覆盖AI开发全生命周期</p>
+<div class="features-grid">
+<div class="feature-card"><span class="feature-icon">🧠</span><h3>AI记忆持久化</h3><p>零断连记忆存储，跨会话持久化上下文，永不丢失对话历史与项目知识。</p><span class="feature-tag">核心引擎</span></div>
+<div class="feature-card"><span class="feature-icon">🔍</span><h3>实时热点监控</h3><p>同时监控GitHub Trending、Hacker News、Dev.to、Reddit，捕捉每一个技术脉动。</p><span class="feature-tag">情报系统</span></div>
+<div class="feature-card"><span class="feature-icon">📊</span><h3>9维度推演分析</h3><p>安全/性能/架构/创新/扩容/可靠性/智能/质量/生态，360°全景评估。</p><span class="feature-tag">深度分析</span></div>
+<div class="feature-card"><span class="feature-icon">🗺️</span><h3>多维思维导图</h3><p>自动延伸知识图谱，从节点到网络，构建永不遗忘的知识体系。</p><span class="feature-tag">知识引擎</span></div>
+<div class="feature-card"><span class="feature-icon">🔄</span><h3>每日自我进化</h3><p>6步闭环自动迭代：扫描→审计→备份→修复→审查→进化，每天更聪明。</p><span class="feature-tag">自动化</span></div>
+<div class="feature-card"><span class="feature-icon">🌐</span><h3>3D大脑镜像</h3><p>137节点·4200边的可视化神经网络，实时渲染AI思维路径。</p><span class="feature-tag">可视化</span></div>
+<div class="feature-card"><span class="feature-icon">🐘</span><h3>无限扩容</h3><p>SQLite平滑迁移至PostgreSQL+pgvector，从本地到云端无缝扩展。</p><span class="feature-tag">基础设施</span></div>
+<div class="feature-card"><span class="feature-icon">🛡️</span><h3>私有化部署</h3><p>完整本地部署方案，数据不出网，安全可控。支持Docker一键部署。</p><span class="feature-tag">安全</span></div>
+<div class="feature-card"><span class="feature-icon">⚔️</span><h3>30+渗透工具集</h3><p>nmap·nuclei·sqlmap·hashcat·metasploit·hydra·BurpSuite全集成调度。</p><span class="feature-tag">安全工具</span></div>
+<div class="feature-card"><span class="feature-icon">🖥️</span><h3>桌面远程控制</h3><p>RustDesk+VNC+键鼠控制，多平台桌面全控，实时屏幕+截图+语音。</p><span class="feature-tag">远程控制</span></div>
+<div class="feature-card"><span class="feature-icon">📡</span><h3>API代理+逆向</h3><p>智能API代理转发，请求逆向分析，流量解密与重放攻击模拟。</p><span class="feature-tag">网络工具</span></div>
+<div class="feature-card"><span class="feature-icon">🎯</span><h3>智能调度全自动渗透</h3><p>从信息收集到漏洞利用全自动化，智能编排渗透测试任务链。</p><span class="feature-tag">自动化</span></div>
+</div>
+</div>
+</section>
+<section class="tech-section" id="tech">
+<div class="container-sm">
+<div class="section-label">Tech Stack</div>
+<h2 class="section-title">技术栈全览</h2>
+<p class="section-subtitle">32个工具链协同工作，覆盖全栈开发与安全测试</p>
+<div class="tech-grid">
+<div class="tech-item">Node.js v24</div><div class="tech-item">Python 3.12</div><div class="tech-item">TypeScript</div>
+<div class="tech-item">PostgreSQL</div><div class="tech-item">pgvector</div><div class="tech-item">SQLite</div>
+<div class="tech-item">nmap</div><div class="tech-item">nuclei</div><div class="tech-item">sqlmap</div>
+<div class="tech-item">hashcat</div><div class="tech-item">metasploit</div><div class="tech-item">RustDesk</div>
+<div class="tech-item">Docker</div><div class="tech-item">Vercel</div><div class="tech-item">Git</div>
+<div class="tech-item">Ollama</div><div class="tech-item">智谱GLM</div><div class="tech-item">OpenAI</div>
+</div>
+</div>
+</section>
+<section class="pricing-section" id="pricing">
+<div class="container-sm">
+<div class="section-label">Pricing</div>
+<h2 class="section-title">简单透明的定价</h2>
+<p class="section-subtitle">从个人开发者到企业团队，找到适合你的方案</p>
+<div class="pricing-grid">
+<div class="pricing-card">
+<div class="pricing-plan">Starter</div>
+<div class="pricing-price"><span class="currency">¥</span>9<span class="period">/月</span></div>
+<p class="pricing-desc">适合个人开发者快速体验</p>
+<ul class="pricing-features">
+<li>AI记忆持久化</li>
+<li>实时热点监控</li>
+<li>基础渗透工具 (5个)</li>
+<li>SQLite存储</li>
+<li>社区支持</li>
+<li class="disabled">私有化部署</li>
+<li class="disabled">3D大脑镜像</li>
+</ul>
+<a href="#" class="pricing-btn secondary">免费试用</a>
+</div>
+<div class="pricing-card popular">
+<div class="pricing-plan">Pro</div>
+<div class="pricing-price"><span class="currency">¥</span>29<span class="period">/月</span></div>
+<p class="pricing-desc">专业开发者与企业用户首选</p>
+<ul class="pricing-features">
+<li>AI记忆持久化（无限会话）</li>
+<li>实时热点监控（全平台）</li>
+<li>30+渗透工具全集成</li>
+<li>9维度推演分析</li>
+<li>PostgreSQL+pgvector</li>
+<li>私有化部署</li>
+<li class="disabled">3D大脑镜像</li>
+</ul>
+<a href="#" class="pricing-btn primary">立即订阅</a>
+</div>
+<div class="pricing-card">
+<div class="pricing-plan">Enterprise</div>
+<div class="pricing-price"><span class="currency">¥</span>99<span class="period">/月</span></div>
+<p class="pricing-desc">企业级全功能旗舰方案</p>
+<ul class="pricing-features">
+<li>Pro全部功能</li>
+<li>3D大脑镜像（137节点）</li>
+<li>多维思维导图延伸</li>
+<li>桌面远程控制全功能</li>
+<li>API代理+逆向分析</li>
+<li>专属技术支持</li>
+<li>99.9% SLA保证</li>
+</ul>
+<a href="#" class="pricing-btn primary">联系销售</a>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-section" id="cta">
+<div class="cta-glow"></div>
+<div class="container-xs">
+<div class="section-label">Get Started</div>
+<h2 class="section-title">准备好开始了吗？</h2>
+<p class="section-subtitle">一条命令，即刻拥有全能AI开发平台。</p>
+<div class="hero-actions" style="margin-top:32px">
+<a href="#" class="btn btn-primary"><span>⚡</span> irm bootstrap.ps1 | iex</a>
+<a href="#" class="btn btn-secondary"><span>📖</span> 阅读文档</a>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-brand">⚕ GBT小土豆全能开发者</div>
+<ul class="footer-links">
+<li><a href="#">文档</a></li><li><a href="#">GitHub</a></li><li><a href="#">更新日志</a></li><li><a href="#">隐私政策</a></li><li><a href="#">联系我们</a></li>
+</ul>
+</div>
+<div class="footer-bottom">⚕ GBT小土豆全能开发者 · AI Brain v3.0 · MIT License</div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60)});
+document.getElementById('mobileBtn').addEventListener('click',()=>{
+const links=document.querySelector('.nav-links');
+links.style.display=links.style.display==='flex'?'none':'flex';
+});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'})})});
+</script>
+</body>
+</html>
