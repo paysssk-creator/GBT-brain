@@ -3,9 +3,14 @@
     "Git 仓库已初始化",
     "当前分支: master",
     "已配置远程仓库",
+    ".clinerules 存在",
     ".gitignore 存在"
   ],
   "warnings": [
+    {
+      "name": "无未提交改动 (当前: 2)",
+      "detail": ""
+    },
     {
       "name": "测试套件存在",
       "detail": "项目无测试，修改后无法自动验证"
@@ -15,20 +20,11 @@
       "detail": ""
     }
   ],
-  "failed": [
-    {
-      "name": "无未提交改动 (当前: 8)",
-      "detail": ""
-    },
-    {
-      "name": ".clinerules 存在",
-      "detail": "缺少 Cline 规则文件"
-    }
-  ],
-  "timestamp": "2026-06-13T14:03:17.525Z",
+  "failed": [],
+  "timestamp": "2026-06-13T14:25:45.493Z",
   "summary": {
-    "passed": 4,
-    "warnings": 2,
-    "failed": 2
+    "passed": 5,
+    "warnings": 3,
+    "failed": 0
   }
 }

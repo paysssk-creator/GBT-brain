@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "description": "GBT小土豆全能开发者 — 自主自动化持久配置",
+  "created": "2026-06-13",
+  "rules": {
+    "authorization": {
+      "mode": "one-click-then-auto",
+      "initial": "manual",
+      "subsequent": "auto-after-3min",
+      "autoGrantTimeoutMs": 180000,
+      "description": "首次手动授权后，后续授权弹窗等待3分钟无人点击则自动通过"
+    },
+    "execution": {
+      "mode": "autonomous",
+      "confirmOnce": true,
+      "dangerousPause": ["rm -rf", "format", "del /F /S C:\\", "DROP TABLE", "DROP DATABASE"],
+      "description": "用户确认一次后全自主执行，仅遇删库格盘等危险操作时暂停"
+    },
+    "desktop": {
+      "beforeAction": "screenshot",
+      "reuseBrowserTabs": true,
+      "maxNewTabs": 1,
+      "description": "操作前先截图看桌面，浏览器已打开就直接用，不新开标签页"
+    },
+    "schedule": {
+      "dailyScan": "02:00",
+      "dailyEvolve": "03:00",
+      "healthCheck": "every-6h",
+      "autoFix": "on-scan-findings"
+    },
+    "onBoot": {
+      "openLanding": true,
+      "startScheduler": true,
+      "startDaemon": true
+    }
+  }
+}

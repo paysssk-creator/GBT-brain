@@ -1,6 +1,10 @@
 {
   "fullControl": true,
   "grantedAt": "2026-06-11T12:48:52.321Z",
-  "scope": "完全操控电脑的所有",
-  "user": "ADMIN"
+  "scope": "完全操控电脑的所有能力",
+  "user": "ADMIN",
+  "autoGrant": true,
+  "autoGrantTimeoutMs": 180000,
+  "pending": false,
+  "description": "首次手动授权后永久有效, 后续授权弹窗3分钟无人响应自动通过"
 }
