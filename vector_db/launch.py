@@ -69,9 +69,30 @@ def run_dimensions():
     print(f"  Nodes: {result['stats']['nodes']}")
     return result
 
+def run_landing():
+    """打开GBT霸气首页 (landing.html) — 默认启动页"""
+    show_title()
+    print("  ⚕ 正在启动 GBT小土豆全能开发者 霸气首页...")
+    landing_path = os.path.join(os.path.dirname(__file__), "..", "landing.html")
+    landing_path = os.path.abspath(landing_path)
+    if os.path.exists(landing_path):
+        os.startfile(landing_path)
+        print(f"  ✅ 霸气首页已打开: {landing_path}")
+    else:
+        print(f"  ❌ landing.html 未找到，尝试打开 public/index.html")
+        pub_path = os.path.join(os.path.dirname(__file__), "..", "public", "index.html")
+        pub_path = os.path.abspath(pub_path)
+        if os.path.exists(pub_path):
+            os.startfile(pub_path)
+        else:
+            print("  ❌ 未找到任何首页文件，运行全系统启动...")
+            run_all()
+
 def run_all():
     show_title()
     print("  === Full System Boot ===")
+    print()
+    run_landing()
     print()
     run_brain()
     print()
@@ -81,13 +102,13 @@ def run_all():
     print()
     run_dimensions()
     print()
-    run_mirror()
     print(f"\n  {GT_BRAND} - All Systems Online!")
 
 
 if __name__ == "__main__":
-    arg = sys.argv[1] if len(sys.argv) > 1 else "all"
+    arg = sys.argv[1] if len(sys.argv) > 1 else "landing"
     commands = {
+        "landing": run_landing,
         "brain": run_brain,
         "mirror": run_mirror,
         "mindspace": run_mindspace,
@@ -95,7 +116,7 @@ if __name__ == "__main__":
         "dimensions": run_dimensions,
         "all": run_all,
     }
-    cmd = commands.get(arg, run_all)
+    cmd = commands.get(arg, run_landing)
     try:
         cmd()
     except KeyboardInterrupt:

@@ -165,3 +165,13 @@
 {"ts":"2026-06-13T11:19:08.902Z","user":"ADMIN","category":"process","action":"list","data":{"filter":"node"}}
 {"ts":"2026-06-13T11:19:13.394Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-CimInstance Win32_Process -Filter \"name='node.exe'\" | Select-Object ProcessId, CommandLine | Format-Table -Wrap","shell":"powershell"}}
 {"ts":"2026-06-13T11:19:24.579Z","user":"ADMIN","category":"process","action":"kill","data":{"target":2560}}
+{"ts":"2026-06-13T13:35:38.771Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path C:\\Users\\ADMIN -Recurse -Filter \"*.env\" -ErrorAction SilentlyContinue | Select-Object FullName -First 20","shell":"powershell"}}
+{"ts":"2026-06-13T13:35:43.791Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path C:\\Users\\ADMIN -Recurse -Include \"wrangler.*\",\"cloudflare.*\" -ErrorAction SilentlyContinue | Select-Object FullName -First 10","shell":"powershell"}}
+{"ts":"2026-06-13T13:36:29.747Z","user":"ADMIN","category":"process","action":"launch","data":{"target":"https://dash.cloudflare.com/2205e0a94e9e5a0cfd5edae6c53503a2/gbt","args":[]}}
+{"ts":"2026-06-13T13:36:34.513Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Start-Sleep -Seconds 5; Write-Host \"ready\"","shell":"powershell"}}
+{"ts":"2026-06-13T13:37:23.590Z","user":"ADMIN","category":"process","action":"launch","data":{"target":"https://dash.cloudflare.com/2205e0a94e9e5a0cfd5edae6c53503a2/gbt","args":[]}}
+{"ts":"2026-06-13T13:37:27.356Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Start-Sleep -Seconds 3","shell":"powershell"}}
+{"ts":"2026-06-13T13:57:44.705Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path \"$env:USERPROFILE\\.cline\" -Recurse -Depth 2 | Select-Object FullName, Length | Format-Table -AutoSize","shell":"powershell"}}
+{"ts":"2026-06-13T13:57:45.133Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Process | Where-Object { $_.MainWindowTitle -ne '' } | Select-Object MainWindowTitle, ProcessName | Format-Table -AutoSize","shell":"powershell"}}
+{"ts":"2026-06-13T13:58:04.282Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Process chrome | Select-Object Id, MainWindowTitle, StartTime | Format-Table -AutoSize","shell":"powershell"}}
+{"ts":"2026-06-13T13:58:04.676Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path \"$env:USERPROFILE\\.gbt\" -Recurse -Depth 2 | Select-Object FullName | Format-Table -AutoSize","shell":"powershell"}}

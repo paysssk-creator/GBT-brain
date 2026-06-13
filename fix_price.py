@@ -1,0 +1,1 @@
+﻿import re; h=open(r'C:\Users\ADMIN\.gbt\landing.html','r',encoding='utf-8').read(); h=h.replace(chr(0xa5)+'9','').replace(chr(0xa5)+'79','').replace(chr(0xa5)+'29','').replace(chr(0xa5)+'249','').replace(chr(0xa5)+'99','').replace(chr(0xa5)+'899',''); open(r'C:\Users\ADMIN\.gbt\landing.html','w',encoding='utf-8').write(h); print('USD done')

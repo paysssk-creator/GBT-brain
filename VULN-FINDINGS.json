@@ -1,0 +1,310 @@
+{
+  "scanTime": "2026-06-13T14:02:19.789Z",
+  "project": "C:\\Users\\ADMIN\\.gbt",
+  "summary": {
+    "total": 33,
+    "high": 12,
+    "medium": 2,
+    "low": 17,
+    "info": 2
+  },
+  "findings": [
+    {
+      "ruleId": "SEC-003",
+      "ruleName": "xss-innerHTML",
+      "severity": "medium",
+      "file": "desktop\\noVNC\\app\\ui.js",
+      "line": 1188,
+      "snippet": "document.getElementById('noVNC_fingerprint').innerHTML = fingerprint;",
+      "description": "直接设置 innerHTML 可能导致 XSS"
+    },
+    {
+      "ruleId": "QUAL-002",
+      "ruleName": "debugger-statement",
+      "severity": "medium",
+      "file": "desktop\\noVNC\\core\\util\\browser.js",
+      "line": 15,
+      "snippet": "// requried for Chrome debugger",
+      "description": "代码中残留 debugger 语句"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "artwork\\draw_1781248614800.js",
+      "line": 53,
+      "snippet": "console.log('OK');",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "DEP-001",
+      "ruleName": "deprecated-api",
+      "severity": "low",
+      "file": "desktop\\noVNC\\app\\ui.js",
+      "line": 974,
+      "snippet": "Log.Debug(\">> UI.clipboardReceive: \" + e.detail.text.substr(0, 40) + \"...\");",
+      "description": "使用了已废弃的 API / 属性"
+    },
+    {
+      "ruleId": "DEP-001",
+      "ruleName": "deprecated-api",
+      "severity": "low",
+      "file": "desktop\\noVNC\\app\\ui.js",
+      "line": 981,
+      "snippet": "Log.Debug(\">> UI.clipboardSend: \" + text.substr(0, 40) + \"...\");",
+      "description": "使用了已废弃的 API / 属性"
+    },
+    {
+      "ruleId": "DEP-001",
+      "ruleName": "deprecated-api",
+      "severity": "low",
+      "file": "desktop\\noVNC\\core\\input\\keyboard.js",
+      "line": 73,
+      "snippet": "if (e.keyIdentifier.substr(0, 2) !== 'U+') {",
+      "description": "使用了已废弃的 API / 属性"
+    },
+    {
+      "ruleId": "DEP-001",
+      "ruleName": "deprecated-api",
+      "severity": "low",
+      "file": "desktop\\noVNC\\core\\input\\keyboard.js",
+      "line": 77,
+      "snippet": "const codepoint = parseInt(e.keyIdentifier.substr(2), 16);",
+      "description": "使用了已废弃的 API / 属性"
+    },
+    {
+      "ruleId": "DEP-001",
+      "ruleName": "deprecated-api",
+      "severity": "low",
+      "file": "desktop\\noVNC\\core\\rfb.js",
+      "line": 1718,
+      "snippet": "bytesResult.push(parseInt(hexResult.substr(c, 2), 16));",
+      "description": "使用了已废弃的 API / 属性"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\tests\\assertions.js",
+      "line": 21,
+      "snippet": "console.log(\"expected data: %o, actual data: %o\", targetData, data);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\tests\\assertions.js",
+      "line": 46,
+      "snippet": "console.log(\"expected data: %o, actual data: %o\", targetData, data);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\convert.js",
+      "line": 98,
+      "snippet": "console.log(`Writing ${outPath}`);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\convert.js",
+      "line": 109,
+      "snippet": "console.log(`  and ${outPath}.map`);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\convert.js",
+      "line": 136,
+      "snippet": "console.log(`Removing ${paths.libDirBase}`);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 30,
+      "snippet": "console.log(\"Error: No filename specified\\n\");",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 34,
+      "snippet": "console.log(\"Parses a *nix keysymdef.h to generate Unicode code point mappings\");",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 35,
+      "snippet": "console.log(\"Usage: node parse.js [options] filename:\");",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 36,
+      "snippet": "console.log(\"  -h [ --help ]                 Produce this help message\");",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 37,
+      "snippet": "console.log(\"  filename                      The keysymdef.h file to parse\");",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 127,
+      "snippet": "console.log(out);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-003",
+      "ruleName": "sync-io-bottleneck",
+      "severity": "info",
+      "file": "artwork\\draw_1781248614800.js",
+      "line": 52,
+      "snippet": "fs.writeFileSync('artwork.png', canvas.toBuffer('image/png'));",
+      "description": "同步 I/O 可能阻塞事件循环"
+    },
+    {
+      "ruleId": "QUAL-003",
+      "ruleName": "sync-io-bottleneck",
+      "severity": "info",
+      "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
+      "line": 41,
+      "snippet": "const buf = fs.readFileSync(filename);",
+      "description": "同步 I/O 可能阻塞事件循环"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 298,
+      "snippet": "client.sendCredentials({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 299,
+      "snippet": "expect(client._rfbCredentials).to.deep.equal({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 304,
+      "snippet": "client.sendCredentials({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1248,
+      "snippet": "client._rfbCredentials = { password: 'passwd' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1261,
+      "snippet": "client._rfbCredentials = { password: 'passwd' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1287,
+      "snippet": "client._rfbCredentials = { password: 'password'};",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1296,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1401,
+      "snippet": "password: 'password123456' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1423,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1454,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1628,
+      "snippet": "client._rfbCredentials = { username: 'username', password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1674,
+      "snippet": "client._rfbCredentials = { username: 'a'.repeat(300), password: 'a'.repeat(300) };",
+      "description": "硬编码密码"
+    }
+  ]
+}
