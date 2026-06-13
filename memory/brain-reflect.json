@@ -1663,6 +1663,162 @@
       },
       "result": "wait",
       "detail": ""
+    },
+    {
+      "cycle": 65,
+      "ts": "2026-06-13T17:37:05.472Z",
+      "state": {
+        "ts": "2026-06-13T17:37:01.856Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.2",
+          "totalGB": "7.4",
+          "usagePct": "84%"
+        },
+        "processes": 315,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "内存1.2GB > 1GB，Chrome进程14 ≤ 20，Git未提交2 ≤ 3，且无超6小时未扫描记录，无需触发任何操作，维持等待状态。"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 66,
+      "ts": "2026-06-13T17:37:06.209Z",
+      "state": {
+        "ts": "2026-06-13T17:37:02.874Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.1",
+          "totalGB": "7.4",
+          "usagePct": "86%"
+        },
+        "processes": 316,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 67,
+      "ts": "2026-06-13T17:38:09.168Z",
+      "state": {
+        "ts": "2026-06-13T17:38:05.557Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "76%"
+        },
+        "processes": 312,
+        "chromeTabs": 15,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 68,
+      "ts": "2026-06-13T17:38:10.020Z",
+      "state": {
+        "ts": "2026-06-13T17:38:06.281Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "76%"
+        },
+        "processes": 313,
+        "chromeTabs": 15,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 69,
+      "ts": "2026-06-13T17:39:13.142Z",
+      "state": {
+        "ts": "2026-06-13T17:39:09.255Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.8",
+          "totalGB": "7.4",
+          "usagePct": "90%"
+        },
+        "processes": 327,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "内存仅0.8GB，低于1GB阈值，需释放资源"
+      },
+      "result": "success",
+      "detail": "chrome-cache-cleaned:2"
+    },
+    {
+      "cycle": 70,
+      "ts": "2026-06-13T17:39:14.295Z",
+      "state": {
+        "ts": "2026-06-13T17:39:10.100Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.8",
+          "totalGB": "7.4",
+          "usagePct": "89%"
+        },
+        "processes": 328,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "AI推导"
+      },
+      "result": "success",
+      "detail": "chrome-cache-cleaned:1"
     }
   ],
   "learnings": [
@@ -1766,11 +1922,21 @@
       "ts": "2026-06-13T17:36:02.798Z",
       "action": "git_backup",
       "learning": "动作 git_backup 成功，[master d9748a8] auto-brain-backup\n 2 files change"
+    },
+    {
+      "ts": "2026-06-13T17:39:13.142Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，chrome-cache-cleaned:2"
+    },
+    {
+      "ts": "2026-06-13T17:39:14.295Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，chrome-cache-cleaned:1"
     }
   ],
   "stats": {
-    "totalActions": 64,
-    "successActions": 19,
+    "totalActions": 70,
+    "successActions": 21,
     "failActions": 1
   }
 }

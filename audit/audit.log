@@ -38,3 +38,22 @@
 {"id":"audit_1781372042938_364a79e40fe5c3e4","timestamp":"2026-06-13T17:34:02.938Z","eventType":"file_read","category":"file_system","action":"file_read","details":{"encoding":"utf8"},"success":true,"severity":"medium","checksum":"98acb1e7accac75826e3ac0f6ffe0ee9392449f53d95f9a3f7bc377a26cc068e","userId":"temp-user","username":"admin","role":"admin","resource":"C:\\Users\\ADMIN\\.gbt\\startup-landing.bat"}
 {"id":"audit_1781372043010_34cdbaeb992cc532","timestamp":"2026-06-13T17:34:03.010Z","eventType":"file_read","category":"file_system","action":"file_read","details":{"encoding":"utf8"},"success":true,"severity":"medium","checksum":"80d393a1e3c81231f083feaea53edb9b1f4580887e6f9ac79dd5dbd6a52958d0","userId":"temp-user","username":"admin","role":"admin","resource":"C:\\Users\\ADMIN\\.gbt\\gbt-daemon.ps1"}
 {"id":"audit_1781372043165_a1270fcb262c69f0","timestamp":"2026-06-13T17:34:03.165Z","eventType":"file_read","category":"file_system","action":"file_read","details":{"encoding":"utf8"},"success":true,"severity":"medium","checksum":"9e61625b292861ef42239cf9802353eb3affcb8657750d45afa412c82d283356","userId":"temp-user","username":"admin","role":"admin","resource":"C:\\Users\\ADMIN\\.gbt\\landing.html"}
+# GBTxiaotudou 审计日志
+# 启动时间: 2026-06-13T17:41:39.873Z
+# 配置: {
+  "enabled": true,
+  "logPath": "C:\\Users\\ADMIN\\.gbt\\audit\\audit.log",
+  "maxFileSize": 52428800,
+  "maxFiles": 10,
+  "compress": true,
+  "enableHashing": true,
+  "enableEncryption": false,
+  "retentionDays": 90,
+  "enableRealTimeAlert": true,
+  "alertThresholds": {
+    "criticalEventsPerMinute": 5,
+    "failedAuthAttemptsPerMinute": 10,
+    "policyViolationsPerHour": 3
+  }
+}
+
