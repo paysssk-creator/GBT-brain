@@ -51,6 +51,448 @@
       },
       "result": "fail",
       "detail": "Command failed: taskkill /F /FI \"IMAGENAME eq chrome.exe\" /FI \"WINDOWTITLE eq\" 2>nul"
+    },
+    {
+      "cycle": 3,
+      "ts": "2026-06-13T16:47:17.379Z",
+      "state": {
+        "ts": "2026-06-13T16:47:13.272Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.3",
+          "totalGB": "7.4",
+          "usagePct": "83%"
+        },
+        "processes": 317,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 4
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "4个文件未提交"
+      },
+      "result": "success",
+      "detail": "[master a2e1c06] auto-brain-backup\n 4 files changed, 82 insertions(+), 411 deletions(-)"
+    },
+    {
+      "cycle": 4,
+      "ts": "2026-06-13T16:48:26.689Z",
+      "state": {
+        "ts": "2026-06-13T16:48:22.956Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.2",
+          "totalGB": "7.4",
+          "usagePct": "83%"
+        },
+        "processes": 319,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 5,
+      "ts": "2026-06-13T16:49:30.528Z",
+      "state": {
+        "ts": "2026-06-13T16:49:26.699Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.0",
+          "totalGB": "7.4",
+          "usagePct": "86%"
+        },
+        "processes": 319,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 6,
+      "ts": "2026-06-13T16:50:34.327Z",
+      "state": {
+        "ts": "2026-06-13T16:50:30.532Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.3",
+          "totalGB": "7.4",
+          "usagePct": "82%"
+        },
+        "processes": 322,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 7,
+      "ts": "2026-06-13T16:51:38.562Z",
+      "state": {
+        "ts": "2026-06-13T16:51:34.335Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.5",
+          "totalGB": "7.4",
+          "usagePct": "80%"
+        },
+        "processes": 318,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 8,
+      "ts": "2026-06-13T16:52:42.310Z",
+      "state": {
+        "ts": "2026-06-13T16:52:38.565Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "75%"
+        },
+        "processes": 319,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 9,
+      "ts": "2026-06-13T16:53:46.169Z",
+      "state": {
+        "ts": "2026-06-13T16:53:42.321Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.3",
+          "totalGB": "7.4",
+          "usagePct": "82%"
+        },
+        "processes": 318,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 10,
+      "ts": "2026-06-13T16:54:49.863Z",
+      "state": {
+        "ts": "2026-06-13T16:54:46.174Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.4",
+          "totalGB": "7.4",
+          "usagePct": "81%"
+        },
+        "processes": 317,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 11,
+      "ts": "2026-06-13T16:55:54.132Z",
+      "state": {
+        "ts": "2026-06-13T16:55:49.868Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.6",
+          "totalGB": "7.4",
+          "usagePct": "79%"
+        },
+        "processes": 316,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 12,
+      "ts": "2026-06-13T16:56:57.789Z",
+      "state": {
+        "ts": "2026-06-13T16:56:54.143Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.7",
+          "totalGB": "7.4",
+          "usagePct": "77%"
+        },
+        "processes": 317,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "所有规则条件未触发：内存 77% > 1GB，Chrome 14 < 20，Git 未提交 3 未超过 3，无超时扫描记录"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 13,
+      "ts": "2026-06-13T16:58:02.199Z",
+      "state": {
+        "ts": "2026-06-13T16:57:57.800Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.2",
+          "totalGB": "7.4",
+          "usagePct": "84%"
+        },
+        "processes": 318,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 14,
+      "ts": "2026-06-13T16:59:06.509Z",
+      "state": {
+        "ts": "2026-06-13T16:59:02.208Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.7",
+          "totalGB": "7.4",
+          "usagePct": "90%"
+        },
+        "processes": 324,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 7
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "AI推导"
+      },
+      "result": "success",
+      "detail": "�ɹ�: ����ֹ PID Ϊ 32148 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 32596 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 18536 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 10036 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 17452 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 20240 �Ľ��̡�\r\n�ɹ�: ����ֹ PID"
+    },
+    {
+      "cycle": 15,
+      "ts": "2026-06-13T16:59:22.964Z",
+      "state": {
+        "ts": "2026-06-13T16:59:18.643Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.1",
+          "totalGB": "7.4",
+          "usagePct": "71%"
+        },
+        "processes": 306,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 16,
+      "ts": "2026-06-13T17:00:10.516Z",
+      "state": {
+        "ts": "2026-06-13T17:00:06.526Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.1",
+          "totalGB": "7.4",
+          "usagePct": "71%"
+        },
+        "processes": 303,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 17,
+      "ts": "2026-06-13T17:00:27.037Z",
+      "state": {
+        "ts": "2026-06-13T17:00:22.977Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.3",
+          "totalGB": "7.4",
+          "usagePct": "69%"
+        },
+        "processes": 303,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 18,
+      "ts": "2026-06-13T17:01:14.578Z",
+      "state": {
+        "ts": "2026-06-13T17:01:10.518Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.1",
+          "totalGB": "7.4",
+          "usagePct": "72%"
+        },
+        "processes": 303,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 19,
+      "ts": "2026-06-13T17:01:30.800Z",
+      "state": {
+        "ts": "2026-06-13T17:01:27.040Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.0",
+          "totalGB": "7.4",
+          "usagePct": "73%"
+        },
+        "processes": 302,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
     }
   ],
   "learnings": [
@@ -59,11 +501,21 @@
       "action": "clean_chrome",
       "error": "Command failed: taskkill /F /FI \"IMAGENAME eq chrome.exe\" /FI \"WINDOWTITLE eq\" 2>nul",
       "learning": "动作 clean_chrome 失败，下次降级处理"
+    },
+    {
+      "ts": "2026-06-13T16:47:17.379Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master a2e1c06] auto-brain-backup\n 4 files change"
+    },
+    {
+      "ts": "2026-06-13T16:59:06.509Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 32148 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 32"
     }
   ],
   "stats": {
-    "totalActions": 2,
-    "successActions": 0,
+    "totalActions": 19,
+    "successActions": 2,
     "failActions": 1
   }
 }
