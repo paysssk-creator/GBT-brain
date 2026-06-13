@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚕ GBT小土豆全能开发者</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: "Microsoft YaHei", sans-serif; background: #0a0e27; color: #e0e0e0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 2.5em; background: linear-gradient(135deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+.header p { color: #888; font-size: 1.1em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 900px; width: 100%; padding: 0 20px; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; cursor: pointer; transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+.card:hover { transform: translateY(-4px); border-color: #7b2ff7; box-shadow: 0 8px 30px rgba(123,47,247,0.2); background: rgba(255,255,255,0.08); }
+.card .icon { font-size: 2.5em; margin-bottom: 15px; }
+.card h3 { font-size: 1.3em; margin-bottom: 8px; color: #fff; }
+.card p { color: #888; font-size: 0.9em; line-height: 1.5; }
+.footer { margin-top: 50px; color: #555; font-size: 0.85em; text-align: center; }
+.status { display: inline-block; width: 8px; height: 8px; background: #00ff88; border-radius: 50%; margin-right: 6px; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>⚕ GBT小土豆全能开发者</h1>
+  <p><span class="status"></span> AI大脑 v3.0 已就绪 | 零断连 | 零服务</p>
+</div>
+<div class="cards">
+  <a class="card" href="landing.html">
+    <div class="icon">🏠</div>
+    <h3>霸气首页</h3>
+    <p>GBT全功能面板 — 一键掌控所有能力</p>
+  </a>
+  <a class="card" href="vector_db/brain_mirror.html">
+    <div class="icon">🌐</div>
+    <h3>3D大脑镜像</h3>
+    <p>可视化认知图谱 — 137节点 4200连接</p>
+  </a>
+  <a class="card" href="#" onclick="openVSCode(); return false;">
+    <div class="icon">💻</div>
+    <h3>AI编程助手</h3>
+    <p>Cline AI — 在VS Code中编码</p>
+  </a>
+  <a class="card" href="public/index.html">
+    <div class="icon">📊</div>
+    <h3>数据面板</h3>
+    <p>GBT运行状态实时监控</p>
+  </a>
+</div>
+<div class="footer">GBTxiaotudou © 2026 | 零服务器 · 零断连 · 永不停用</div>
+<script>
+function openVSCode() {
+  // Opens VS Code with Cline (only if installed)
+  window.location.href = 'vscode://saoudrizwan.claude-dev';
+  setTimeout(() => {
+    alert('请在VS Code中打开Cline扩展 (Ctrl+Shift+P → Cline: Open in New Tab)');
+  }, 500);
+}
+</script>
+</body>
+</html>

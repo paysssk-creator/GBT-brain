@@ -1,0 +1,13 @@
+{
+  "createdAt": "2026-06-13T17:47:45.529Z",
+  "evolutions": [
+    {
+      "summary": "修复了20个Python文件的编码问题(GBK转UTF-8)，重写了GBT.bat启动脚本，launch.py默认改为GUI landing模式",
+      "timestamp": "2026-06-13T17:47:45.530Z",
+      "files": []
+    }
+  ],
+  "memories": [],
+  "config": {},
+  "lastEvolve": "2026-06-13T17:47:45.530Z"
+}
