@@ -105,25 +105,75 @@ function execute(a) {
   } catch (e) { return { ok: false, error: (e.stdout || e.stderr || e.message || '').slice(0, 200) }; }
 }
 
+const MEM_FILE = path.join(GBT, 'memory', 'brain-reflect.json');
+function loadMem() { try { return fs.existsSync(MEM_FILE) ? JSON.parse(fs.readFileSync(MEM_FILE, 'utf-8')) : { cycles: [], learnings: [], stats: { totalActions: 0, successActions: 0, failActions: 0 } }; } catch { return { cycles: [], learnings: [], stats: { totalActions: 0, successActions: 0, failActions: 0 } }; } }
+function saveMem(m) { try { fs.writeFileSync(MEM_FILE, JSON.stringify(m, null, 2)); } catch {} }
+
+async function reflect(s, d, r) {
+  const mem = loadMem();
+  mem.stats.totalActions++;
+  if (r?.ok) mem.stats.successActions++;
+  else if (r) mem.stats.failActions++;
+
+  // 记录本轮
+  const entry = { cycle: mem.cycles.length + 1, ts: new Date().toISOString(), state: s, decision: d, result: r?.ok ? 'success' : (r ? 'fail' : 'wait'), detail: r?.output || r?.error || '' };
+  mem.cycles.push(entry);
+  if (mem.cycles.length > 100) mem.cycles = mem.cycles.slice(-100);
+
+  // 反思：从结果中学习
+  if (r && !r.ok) {
+    const lesson = { ts: new Date().toISOString(), action: d.action, error: r.error?.slice(0, 100) || '', learning: '动作 ' + d.action + ' 失败，下次降级处理' };
+    mem.learnings.push(lesson);
+    log('REFLECT: 失败教训 → ' + lesson.learning);
+  } else if (r?.ok) {
+    const lesson = { ts: new Date().toISOString(), action: d.action, learning: '动作 ' + d.action + ' 成功，' + (r.output || '').slice(0, 50) };
+    mem.learnings.push(lesson);
+    log('REFLECT: 成功经验 → ' + lesson.learning);
+  } else {
+    log('REFLECT: 本轮无操作，系统稳定');
+  }
+  if (mem.learnings.length > 50) mem.learnings = mem.learnings.slice(-50);
+
+  saveMem(mem);
+  return mem;
+}
+
 async function brainLoop() {
   log('══════════════════════════════════════');
-  log('⚕ GBT AI自主大脑 v3.0 启动');
+  log('⚕ GBT AI自主大脑 v4.0 启动');
   log('   模型: ' + (API_KEY ? API_MODEL : '规则引擎'));
   log('   间隔: ' + (INTERVAL / 1000) + '秒');
+  log('   闭环: 观察→思考→执行→反思→记忆');
   log('══════════════════════════════════════');
   let cycle = 0;
   while (true) {
     cycle++;
     log('── 周期 #' + cycle + ' ──');
+
+    // ① 观察
     const s = observe();
-    log('OBSERVE: 内存' + s.memory?.freeGB + 'GB | Chrome' + s.chromeTabs + ' | Git' + s.gitDirty + ' | 扫描' + (s.lastScan?.total || 0) + '问题');
+    log('① OBSERVE: 内存' + s.memory?.freeGB + 'GB | Chrome' + s.chromeTabs + ' | Git' + s.gitDirty + ' | 扫描' + (s.lastScan?.total || 0) + '问题');
+
+    // ② 思考
     const d = await think(s);
+
+    // ③ 执行
+    let r = null;
     if (d.action && d.action !== 'wait') {
-      const r = execute(d.action);
-      log('RESULT: ' + (r.ok ? '✅' : '❌') + ' ' + (r.output || r.error || ''));
+      r = execute(d.action);
+      log('③ EXEC: ' + (r.ok ? '✅' : '❌') + ' ' + (r.output || r.error || ''));
     } else {
-      log('THINK: 系统健康，静待');
+      log('③ EXEC: 跳过');
     }
+
+    // ④ 反思
+    const mem = await reflect(s, d, r);
+
+    // ⑤ 记忆总结
+    const total = mem.stats.totalActions;
+    const rate = total > 0 ? (mem.stats.successActions / total * 100).toFixed(0) : '-';
+    log('④⑤ REFLECT+MEM: 总' + total + '次 | 成功率' + rate + '% | 教训' + mem.learnings.length + '条');
+
     log('SLEEP: ' + (INTERVAL / 1000) + 's...');
     await new Promise(r => setTimeout(r, INTERVAL));
   }

@@ -1,0 +1,36 @@
+{
+  "cycles": [
+    {
+      "cycle": 1,
+      "ts": "2026-06-13T15:17:42.335Z",
+      "state": {
+        "ts": "2026-06-13T15:17:38.069Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.2",
+          "totalGB": "7.4",
+          "usagePct": "83%"
+        },
+        "processes": 309,
+        "chromeTabs": 16,
+        "lastScan": {
+          "total": 33,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    }
+  ],
+  "learnings": [],
+  "stats": {
+    "totalActions": 1,
+    "successActions": 0,
+    "failActions": 0
+  }
+}
