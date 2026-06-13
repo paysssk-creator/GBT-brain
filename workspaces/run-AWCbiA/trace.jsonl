@@ -1,0 +1,6 @@
+{"ts":"2026-06-12T08:44:20.828Z","traceId":"gbt-1781253860824","seq":0,"phase":"pipeline","kind":"info","data":{"requirement":"你好，你是本地AI还是远程AI？","model":"qwen2.5-coder:7b-cpu","traceId":"gbt-1781253860824"}}
+{"ts":"2026-06-12T08:44:20.830Z","traceId":"gbt-1781253860824","seq":1,"phase":"sandbox.select","kind":"start"}
+{"ts":"2026-06-12T08:44:20.831Z","traceId":"gbt-1781253860824","seq":2,"phase":"sandbox.select","kind":"end","durationMs":1}
+{"ts":"2026-06-12T08:44:20.831Z","traceId":"gbt-1781253860824","seq":3,"phase":"sandbox.select","kind":"info","data":{"backend":"local","reason":"配置为 local，使用本地执行"}}
+{"ts":"2026-06-12T08:44:20.832Z","traceId":"gbt-1781253860824","seq":4,"phase":"llm.generate","kind":"start","data":{"promptChars":16}}
+{"ts":"2026-06-12T09:08:47.057Z","traceId":"gbt-1781253860824","seq":5,"phase":"llm.generate","kind":"error","durationMs":1466223,"data":{"message":"Request timed out."}}

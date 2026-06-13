@@ -1,0 +1,10 @@
+{
+  "id": "note_1781350289_cd5e06",
+  "title": "ChromaDB embedded mode",
+  "content": "ChromaDB supports embedded PersistentClient mode. No server needed. But downloads ONNX model on first use (79MB). Works with Python 3.12.",
+  "tags": [
+    "chromadb",
+    "vector-db"
+  ],
+  "timestamp": "2026-06-13 18:31:29"
+}

@@ -1,0 +1,142 @@
+{
+  "keys": [
+    {
+      "id": "key-1781188528817",
+      "name": "DeepSeek API",
+      "provider": "deepseek",
+      "keyType": "api_key",
+      "valueEncrypted": "sk-aaac2c5b8bd64390ad16089f5e0c0a487cfcc68e5877a9b5",
+      "valuePreview": "sk-aaa...a9b5",
+      "createdAt": "2026-06-11T14:35:28.817Z",
+      "expiresAt": "2026-09-09T14:35:28.827Z",
+      "lastRotated": "2026-06-11T14:35:28.827Z",
+      "rotationDays": 90,
+      "autoRotate": true,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T14:35:28.827Z",
+          "action": "rotated",
+          "oldPreview": "sk-b35...7536",
+          "newPreview": "sk-aaa...a9b5"
+        },
+        {
+          "date": "2026-06-11T14:35:28.817Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "sk-b35...7536"
+        }
+      ]
+    },
+    {
+      "id": "key-1781192525854",
+      "name": "k1",
+      "provider": "custom",
+      "keyType": "api",
+      "valueEncrypted": "s1",
+      "valuePreview": "****",
+      "createdAt": "2026-06-11T15:42:05.854Z",
+      "expiresAt": "2026-09-09T15:42:05.854Z",
+      "lastRotated": "2026-06-11T15:42:05.854Z",
+      "rotationDays": 90,
+      "autoRotate": false,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T15:42:05.854Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "****"
+        }
+      ]
+    },
+    {
+      "id": "key-1781193553164",
+      "name": "test",
+      "provider": "github",
+      "keyType": "api",
+      "valueEncrypted": "V",
+      "valuePreview": "****",
+      "createdAt": "2026-06-11T15:59:13.164Z",
+      "expiresAt": "2026-09-09T15:59:13.164Z",
+      "lastRotated": "2026-06-11T15:59:13.164Z",
+      "rotationDays": 90,
+      "autoRotate": false,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T15:59:13.164Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "****"
+        }
+      ]
+    },
+    {
+      "id": "key-1781193951330",
+      "name": "default",
+      "provider": "github",
+      "keyType": "api_key",
+      "valueEncrypted": "sk-7f612cbb6313f5d1278abea156f45066464233a1a56e3cfa",
+      "valuePreview": "sk-7f6...3cfa",
+      "createdAt": "2026-06-11T16:05:51.330Z",
+      "expiresAt": "2026-09-09T16:05:51.330Z",
+      "lastRotated": "2026-06-11T16:05:51.330Z",
+      "rotationDays": 90,
+      "autoRotate": false,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T16:05:51.330Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "sk-7f6...3cfa"
+        }
+      ]
+    },
+    {
+      "id": "key-1781198999317",
+      "name": "default",
+      "provider": "custom",
+      "keyType": "api_key",
+      "valueEncrypted": "sk-766112d9a8c9f698b289939a628d20ac5a2a97475df8fc96",
+      "valuePreview": "sk-766...fc96",
+      "createdAt": "2026-06-11T17:29:59.317Z",
+      "expiresAt": "2026-09-09T17:29:59.317Z",
+      "lastRotated": "2026-06-11T17:29:59.317Z",
+      "rotationDays": 90,
+      "autoRotate": false,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T17:29:59.317Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "sk-766...fc96"
+        }
+      ]
+    },
+    {
+      "id": "key-1781213110952",
+      "name": "default",
+      "provider": "custom",
+      "keyType": "api_key",
+      "valueEncrypted": "b12b9d22eefd3169fa2539748f9503b3:3e763de1436d9893a58261061e4d7132:7cb647973a12608fa530cef50bdce276b52e783edafa6231181c290db9ceec263e1abd6f88145ee8c80fd47e2d65436afcd8ed",
+      "valuePreview": "sk-4c7...c62d",
+      "createdAt": "2026-06-11T21:25:10.952Z",
+      "expiresAt": "2026-09-09T21:25:10.952Z",
+      "lastRotated": "2026-06-11T21:25:10.952Z",
+      "rotationDays": 90,
+      "autoRotate": false,
+      "status": "valid",
+      "history": [
+        {
+          "date": "2026-06-11T21:25:10.952Z",
+          "action": "created",
+          "oldPreview": "",
+          "newPreview": "sk-4c7...c62d"
+        }
+      ]
+    }
+  ]
+}

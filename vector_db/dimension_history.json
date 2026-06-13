@@ -1,0 +1,572 @@
+{
+  "runs": [
+    {
+      "target": "GBT Creator - ???? MCP Server",
+      "timestamp": "2026-06-13T18:53:57.034600",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 2.7,
+          "weighted": 16.4,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        }
+      },
+      "total": 0.3,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??0???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??0???: ??????????",
+        "[????] ??0???: ??????"
+      ]
+    },
+    {
+      "target": "MindSpace Data Pipeline",
+      "timestamp": "2026-06-13T18:53:57.082271",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 1.1,
+          "weighted": 7.8,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 1.8,
+          "weighted": 10.9,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 2.2,
+          "weighted": 22.2,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 2.5,
+          "weighted": 12.5,
+          "analysis": "{\"security\": 0.0, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 1.1111111111111112, \"innovation\": 1.8181818181818181, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 2.2222222222222223, "
+        }
+      },
+      "total": 0.7,
+      "suggestions": [
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??1???: ???????",
+        "[????] ??2???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??2???: ??????????",
+        "[????] ??2???: ??????"
+      ]
+    },
+    {
+      "target": "GBT Creator - ???? MCP Server/baseline",
+      "timestamp": "2026-06-13T18:53:57.152298",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 2.7,
+          "weighted": 16.4,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        }
+      },
+      "total": 0.3,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??0???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??0???: ??????????",
+        "[????] ??0???: ??????"
+      ]
+    },
+    {
+      "target": "GBT Creator - ???? MCP Server/add_cache",
+      "timestamp": "2026-06-13T18:53:57.185771",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 1.0,
+          "weighted": 8.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 2.7,
+          "weighted": 16.4,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 1.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        }
+      },
+      "total": 0.5,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??1???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??0???: ??????????",
+        "[????] ??0???: ??????"
+      ]
+    },
+    {
+      "target": "GBT Creator - ???? MCP Server/add_distributed",
+      "timestamp": "2026-06-13T18:53:57.220431",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 2.7,
+          "weighted": 16.4,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 2.5,
+          "weighted": 20.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 2.5, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        }
+      },
+      "total": 0.6,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??0???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??2???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??0???: ??????????",
+        "[????] ??0???: ??????"
+      ]
+    },
+    {
+      "target": "GBT Creator - ???? MCP Server/add_streaming",
+      "timestamp": "2026-06-13T18:53:57.252487",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 2.7,
+          "weighted": 16.4,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 0.0, \"architecture\": 0.0, \"quality\": 0.0, \"innovation\": 2.727272727272727, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 0.0, \"ecosystem\": 0.0"
+        }
+      },
+      "total": 0.3,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??0???: ????N+1???",
+        "[????] ??0???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??0???: ??????????",
+        "[????] ??0???: ??????"
+      ]
+    },
+    {
+      "target": "GBT Self-Evolving Platform",
+      "timestamp": "2026-06-13T18:55:04.428815",
+      "dimensions": {
+        "security": {
+          "name": "????",
+          "weight": 10,
+          "score": 0.8,
+          "weighted": 8.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "performance": {
+          "name": "????",
+          "weight": 8,
+          "score": 2.0,
+          "weighted": 16.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "architecture": {
+          "name": "????",
+          "weight": 9,
+          "score": 1.1,
+          "weighted": 10.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "quality": {
+          "name": "????",
+          "weight": 7,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "innovation": {
+          "name": "????",
+          "weight": 6,
+          "score": 3.6,
+          "weighted": 21.8,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "scalability": {
+          "name": "????",
+          "weight": 8,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "reliability": {
+          "name": "?????",
+          "weight": 9,
+          "score": 0.0,
+          "weighted": 0.0,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "intelligence": {
+          "name": "????",
+          "weight": 10,
+          "score": 3.3,
+          "weighted": 33.3,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        },
+        "ecosystem": {
+          "name": "????",
+          "weight": 5,
+          "score": 1.2,
+          "weighted": 6.2,
+          "analysis": "{\"security\": 0.8333333333333334, \"performance\": 2.0, \"architecture\": 1.1111111111111112, \"quality\": 0.0, \"innovation\": 3.6363636363636362, \"scalability\": 0.0, \"reliability\": 0.0, \"intelligence\": 3.333"
+        }
+      },
+      "total": 1.3,
+      "suggestions": [
+        "[????] ??1???: ???????????",
+        "[????] ??2???: ????N+1???",
+        "[????] ??1???: ???????????",
+        "[????] ??0???: ???????",
+        "[????] ??4???: ??????????",
+        "[????] ??0???: ???????",
+        "[?????] ??0???: ???????",
+        "[????] ??3???: ??????????",
+        "[????] ??1???: ??????"
+      ]
+    }
+  ],
+  "total_scores": {}
+}

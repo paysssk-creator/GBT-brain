@@ -1,0 +1,51 @@
+{
+  "entries": [
+    {
+      "id": "aud-1781192526717-f7dr",
+      "timestamp": "2026-06-11T15:42:06.717Z",
+      "action": "test"
+    },
+    {
+      "id": "aud-1781192084687-f7pp",
+      "timestamp": "2026-06-11T15:34:44.687Z",
+      "action": "test"
+    },
+    {
+      "id": "aud-1781188549876-djj5",
+      "timestamp": "2026-06-11T14:35:49.876Z",
+      "action": "server.deploy",
+      "actor": "未知",
+      "resource": "生产服务器",
+      "resourceType": "server",
+      "result": "denied",
+      "details": "未授权尝试部署",
+      "ip": "10.0.0.99",
+      "risk": "critical"
+    },
+    {
+      "id": "aud-1781188549875-j5z9",
+      "timestamp": "2026-06-11T14:35:49.875Z",
+      "action": "key.rotate",
+      "actor": "系统",
+      "resource": "DeepSeek API Key",
+      "resourceType": "key",
+      "result": "success",
+      "details": "自动轮换API密钥",
+      "ip": "localhost",
+      "risk": "medium"
+    },
+    {
+      "id": "aud-1781188549868-rl4w",
+      "timestamp": "2026-06-11T14:35:49.868Z",
+      "action": "platform.connect",
+      "actor": "GBTxiaotudou",
+      "resource": "GitHub",
+      "resourceType": "platform",
+      "result": "success",
+      "details": "OAuth2授权连接GitHub",
+      "ip": "192.168.1.1",
+      "risk": "low"
+    }
+  ],
+  "version": 1
+}

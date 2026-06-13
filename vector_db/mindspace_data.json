@@ -1,0 +1,300 @@
+{
+  "last_scan": "2026-06-13T18:45:22.626103",
+  "items": {
+    "db8b4604b623c223071b80f47f1fa7b8": {
+      "source": "hackernews",
+      "title": "Show HN: Paca \u2013 Lightweight Jira alternative for human-AI collaboration",
+      "url": "https://github.com/Paca-AI/paca",
+      "description": "Score: 27 | Comments: 10",
+      "type": "news",
+      "ts": "2026-06-13T18:39:58.422243",
+      "score": 4
+    },
+    "a15b5d245e7d18cfc4ff9fa6d4a8342c": {
+      "source": "hackernews",
+      "title": "Open source AI must win",
+      "url": "https://opensourceaimustwin.com/?share=v2",
+      "description": "Score: 1041 | Comments: 322",
+      "type": "news",
+      "ts": "2026-06-13T18:39:59.997730",
+      "score": 4
+    },
+    "03f9e1120f8b96245c2e2e2809622aaa": {
+      "source": "hackernews",
+      "title": "The state of building user interfaces in Rust",
+      "url": "https://areweguiyet.com/#ecosystem",
+      "description": "Score: 7 | Comments: 0",
+      "type": "news",
+      "ts": "2026-06-13T18:40:00.486995",
+      "score": 4
+    },
+    "78ba14876dbd99a45d8645dd34fb0d7b": {
+      "source": "hackernews",
+      "title": "Shepherd's Dog: A Game by the Most Dangerous AI Model",
+      "url": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
+      "description": "Score: 98 | Comments: 84",
+      "type": "news",
+      "ts": "2026-06-13T18:40:01.005971",
+      "score": 4
+    },
+    "ddcdbf061f7ade3b051dd489358d5dbc": {
+      "source": "hackernews",
+      "title": "Leaving Mozilla",
+      "url": "https://blog.unitedheroes.net/5751",
+      "description": "Score: 243 | Comments: 132",
+      "type": "news",
+      "ts": "2026-06-13T18:39:56.821707",
+      "score": 2
+    },
+    "4fb85be88d34732388a93017ed9dd755": {
+      "source": "hackernews",
+      "title": "Electric motors with no rare earths",
+      "url": "https://www.renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths/",
+      "description": "Score: 506 | Comments: 144",
+      "type": "news",
+      "ts": "2026-06-13T18:39:57.376473",
+      "score": 2
+    },
+    "01cb582a37fa8670799090357c62578d": {
+      "source": "hackernews",
+      "title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "description": "Score: 2459 | Comments: 1768",
+      "type": "news",
+      "ts": "2026-06-13T18:39:57.888271",
+      "score": 2
+    },
+    "ae38c4f7e43ef114e7527c60f750a75f": {
+      "source": "hackernews",
+      "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
+      "url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/",
+      "description": "Score: 842 | Comments: 190",
+      "type": "news",
+      "ts": "2026-06-13T18:39:58.927814",
+      "score": 2
+    },
+    "7e87052edf66774b8f8df77fb00800c5": {
+      "source": "hackernews",
+      "title": "A low-carbon computing platform from your retired phones",
+      "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+      "description": "Score: 16 | Comments: 5",
+      "type": "news",
+      "ts": "2026-06-13T18:39:59.447003",
+      "score": 2
+    },
+    "3abb72f9bcd81168077d6afef31b95f5": {
+      "source": "hackernews",
+      "title": "There is a shadow hanging over this Fable thing",
+      "url": "https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow",
+      "description": "Score: 296 | Comments: 264",
+      "type": "news",
+      "ts": "2026-06-13T18:40:01.491091",
+      "score": 2
+    },
+    "e75149cb3ea38de8d16bd599b3f7e7f2": {
+      "source": "github",
+      "title": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "description": ":books: Freely available programming books",
+      "stars": 390166,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 7
+    },
+    "eba9005919729a694a7ff3a7daab7691": {
+      "source": "github",
+      "title": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "stars": 446762,
+      "language": "TypeScript",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "d2b1af00792670cd235c9384715f388c": {
+      "source": "github",
+      "title": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stars": 441189,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "4a23d6cdd8311401b917fe8c8450abc0": {
+      "source": "github",
+      "title": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+      "stars": 378482,
+      "language": "TypeScript",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "aa45a33a6e82be00288927cc6d32d0eb": {
+      "source": "github",
+      "title": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
+      "stars": 302668,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "ee5ebbf098079661f1962006fa471bb5": {
+      "source": "github",
+      "title": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "stars": 298866,
+      "language": null,
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "ecb7de9cc8a0985b6b4bb6a22999121d": {
+      "source": "github",
+      "title": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars": 226449,
+      "language": "Shell",
+      "type": "repo",
+      "ts": "2026-06-13T18:41:28.116309",
+      "score": 5
+    },
+    "ff9bd616e5b8b6cb40fac24eca3fa1c4": {
+      "source": "devto",
+      "title": "CSS \u2013 only a Nerdy Hobby?",
+      "url": "https://dev.to/ingosteinke/css-only-a-nerdy-hobby-17hf",
+      "description": "In times when people believe that \"AI can code a website in 2 days\" (see: how to leverage AI as a...",
+      "tags": "ai,css,webdev,watercooler",
+      "reactions": 35,
+      "type": "article",
+      "ts": "2026-06-13T18:41:34.088066",
+      "score": 5
+    },
+    "52a3e59c4f4f89351d440c2f7539c030": {
+      "source": "hackernews",
+      "title": "How to setup a local coding agent on macOS",
+      "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "description": "Score:387|Comments:95",
+      "type": "news",
+      "ts": "2026-06-13T18:45:22.343633",
+      "score": 6
+    }
+  },
+  "top_finds": [
+    {
+      "source": "github",
+      "title": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "description": ":books: Freely available programming books",
+      "stars": 390167,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 7
+    },
+    {
+      "source": "hackernews",
+      "title": "How to setup a local coding agent on macOS",
+      "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "description": "Score:387|Comments:95",
+      "type": "news",
+      "ts": "2026-06-13T18:45:22.343633",
+      "score": 6
+    },
+    {
+      "source": "github",
+      "title": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "stars": 446762,
+      "language": "TypeScript",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "github",
+      "title": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stars": 441189,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "github",
+      "title": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+      "stars": 378483,
+      "language": "TypeScript",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "github",
+      "title": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
+      "stars": 302668,
+      "language": "Python",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "github",
+      "title": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "stars": 298867,
+      "language": null,
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "github",
+      "title": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars": 226454,
+      "language": "Shell",
+      "type": "repo",
+      "ts": "2026-06-13T18:45:16.406186",
+      "score": 5
+    },
+    {
+      "source": "devto",
+      "title": "CSS \u2013 only a Nerdy Hobby?",
+      "url": "https://dev.to/ingosteinke/css-only-a-nerdy-hobby-17hf",
+      "description": "In times when people believe that \"AI can code a website in 2 days\" (see: how to leverage AI as a...",
+      "tags": "ai,css,webdev,watercooler",
+      "reactions": 35,
+      "type": "article",
+      "ts": "2026-06-13T18:45:22.402494",
+      "score": 5
+    },
+    {
+      "source": "hackernews",
+      "title": "Show HN: Paca \u2013 Lightweight Jira alternative for human-AI collaboration",
+      "url": "https://github.com/Paca-AI/paca",
+      "description": "Score:29|Comments:11",
+      "type": "news",
+      "ts": "2026-06-13T18:45:19.176085",
+      "score": 4
+    }
+  ]
+}

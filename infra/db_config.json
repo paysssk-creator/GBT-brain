@@ -1,0 +1,38 @@
+{
+  "comment": "GBT ????????? - ????",
+  "postgresql": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "gbt",
+    "password": "gbt2024",
+    "databases": {
+      "gbt_creator":  "???? - ??/??/????",
+      "gbt_cline":    "Cline?? - ??/??/??",
+      "gbt_brain":    "AI?? - ??/??/??/?? (????+pgvector)"
+    },
+    "dsn": "postgresql://gbt:gbt2024@localhost:5432/"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "gbt2024",
+    "databases": {
+      "gbt_halo": "Halo CMS ??"
+    },
+    "dsn": "mysql://root:gbt2024@localhost:3306/"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "dsn": "redis://localhost:6379"
+  },
+  "python_env": {
+    "PG_HOST": "localhost",
+    "PG_PORT": "5432",
+    "PG_USER": "gbt",
+    "PG_PASSWORD": "gbt2024",
+    "PG_DATABASE": "gbt_brain",
+    "REDIS_URL": "redis://localhost:6379"
+  }
+}

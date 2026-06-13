@@ -1,0 +1,11 @@
+{
+  "id": "note_1781350289_1b14e1",
+  "title": "MCP server path validation bug",
+  "content": "Found bug in input-validator.ts line 254-262. allowRelative=false was also rejecting absolute paths. Fixed by separating path traversal check from relative path check.",
+  "tags": [
+    "bug",
+    "security",
+    "typescript"
+  ],
+  "timestamp": "2026-06-13 18:31:29"
+}

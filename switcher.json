@@ -1,0 +1,23 @@
+{
+  "providers": {
+    "featherless": {
+      "id": "featherless",
+      "apiKey": "ollama",
+      "alive": true,
+      "consecutiveErrors": 0,
+      "totalCalls": 0,
+      "totalTokens": 0,
+      "lastError": "",
+      "lastCallAt": "",
+      "rateLimitHit": false,
+      "cooldownUntil": ""
+    }
+  },
+  "preferences": {
+    "preferredProviders": [],
+    "bannedProviders": [],
+    "taskOverrides": {}
+  },
+  "history": [],
+  "createdAt": "2026-06-11T10:45:28.628Z"
+}

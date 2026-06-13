@@ -1,0 +1,11 @@
+{
+  "id": "note_1781350289_286ee7",
+  "title": "SQLite vector database design",
+  "content": "Using pure SQLite for vector storage. Each collection is a table, vectors stored as JSON. Cosine similarity for search. WAL mode for performance.",
+  "tags": [
+    "database",
+    "vector",
+    "sqlite"
+  ],
+  "timestamp": "2026-06-13 18:31:29"
+}

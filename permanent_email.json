@@ -1,0 +1,21 @@
+{
+  "permanent_email": {
+    "address": "gbtxiaotudou@web-library.net",
+    "provider": "mail.tm",
+    "password": "GBTxiaotudou2026!",
+    "id": "6a2a9762052258ea2f0a5d61",
+    "imap": {
+      "host": "mail.tm",
+      "port": 993,
+      "ssl": true
+    },
+    "smtp": {
+      "host": "mail.tm",
+      "port": 587,
+      "tls": true
+    },
+    "note": "永久邮箱，支持IMAP/SMTP收发邮件，API: https://api.mail.tm"
+  },
+  "cloud_store": "C:/Users/ADMIN/.gbt/cloud.json",
+  "brand": "GBTxiaotudou"
+}

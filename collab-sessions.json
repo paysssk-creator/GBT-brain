@@ -1,0 +1,105 @@
+{
+  "sessions": [
+    {
+      "id": "collab-1781188611230",
+      "name": "测试协作",
+      "projectDir": "C:/project",
+      "users": [
+        {
+          "id": "user-1781188611245-h869",
+          "name": "小土豆",
+          "color": "#e06c75",
+          "cursor": null,
+          "selection": null,
+          "lastActive": "2026-06-11T14:36:51.245Z"
+        }
+      ],
+      "edits": [
+        {
+          "id": "edit-1781188611246-vhqc",
+          "userId": "user-1781188611245-h869",
+          "file": "index.ts",
+          "type": "insert",
+          "position": 0,
+          "text": "// hello",
+          "oldText": "",
+          "timestamp": "2026-06-11T14:36:51.246Z"
+        }
+      ],
+      "createdAt": "2026-06-11T14:36:51.230Z",
+      "lastActivity": "2026-06-11T14:36:51.246Z"
+    },
+    {
+      "id": "collab-1781192063991",
+      "name": "test",
+      "projectDir": "/tmp",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T15:34:23.991Z",
+      "lastActivity": "2026-06-11T15:34:23.991Z"
+    },
+    {
+      "id": "collab-1781192085469",
+      "name": "s1",
+      "projectDir": "",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T15:34:45.469Z",
+      "lastActivity": "2026-06-11T15:34:45.469Z"
+    },
+    {
+      "id": "collab-1781192529187",
+      "name": "s1",
+      "projectDir": "",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T15:42:09.187Z",
+      "lastActivity": "2026-06-11T15:42:09.187Z"
+    },
+    {
+      "id": "collab-1781193552759",
+      "name": "test",
+      "projectDir": "/tmp",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T15:59:12.759Z",
+      "lastActivity": "2026-06-11T15:59:12.759Z"
+    },
+    {
+      "id": "collab-1781193658325",
+      "name": "test",
+      "projectDir": "/tmp",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T16:00:58.325Z",
+      "lastActivity": "2026-06-11T16:00:58.325Z"
+    },
+    {
+      "id": "collab-1781193949637",
+      "name": "t",
+      "projectDir": "/tmp",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T16:05:49.637Z",
+      "lastActivity": "2026-06-11T16:05:49.637Z"
+    },
+    {
+      "id": "collab-1781199000046",
+      "name": "",
+      "projectDir": "",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T17:30:00.046Z",
+      "lastActivity": "2026-06-11T17:30:00.046Z"
+    },
+    {
+      "id": "collab-1781213269271",
+      "name": "e2e-test-room",
+      "projectDir": "",
+      "users": [],
+      "edits": [],
+      "createdAt": "2026-06-11T21:27:49.271Z",
+      "lastActivity": "2026-06-11T21:27:49.271Z"
+    }
+  ]
+}

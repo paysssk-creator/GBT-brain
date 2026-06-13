@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>��ת�������޻���,���ضԳ�,�޺����Ͻ���,��������Ч��,��ɫ����,SVG������ת</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:800px;height:600px;overflow:hidden;background:linear-gradient(135deg,#0a0015,#1a0030);display:flex;align-items:center;justify-content:center;font-family:system-ui}
+.scene{position:relative;width:400px;height:400px}
+.ring{position:absolute;border:2px solid #ff2a6d;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin 8s linear infinite}
+.ring:nth-child(1){width:100px;height:100px;animation-duration:4s;border-color:#ff2a6d88}
+.ring:nth-child(2){width:180px;height:180px;animation-duration:6s;animation-direction:reverse;border-color:#05d9e866}
+.ring:nth-child(3){width:260px;height:260px;animation-duration:8s;border-color:#ff2a6d44}
+.ring:nth-child(4){width:340px;height:340px;animation-duration:10s;animation-direction:reverse;border-color:#05d9e822}
+.center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:#ff2a6d;border-radius:50%;box-shadow:0 0 30px #ff2a6d88}
+.title{position:absolute;bottom:30px;left:0;right:0;text-align:center;color:#d1f7ff;font-size:24px;font-weight:700;letter-spacing:2px}
+@keyframes spin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="ring"></div>
+  <div class="center"></div>
+</div>
+<div class="title">��ת�������޻���,���ضԳ�,�޺����Ͻ���,��������Ч��,��ɫ����,SVG������ת</div>
+</body>
+</html>

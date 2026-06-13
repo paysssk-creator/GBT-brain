@@ -1,0 +1,22 @@
+{
+  "running": true,
+  "display": ":1",
+  "vnc_port": 5901,
+  "novnc_port": 6080,
+  "web_url": "http://localhost:6080",
+  "resolution": "1280x720",
+  "brand": {
+    "name": "GBTxiaotudou",
+    "title": "小土豆云电脑",
+    "color_primary": "#FF6B35",
+    "color_secondary": "#004E89",
+    "logo_text": "🥔",
+    "welcome_msg": "欢迎来到小土豆云电脑！这是你的专属AI桌面",
+    "version": "1.0.0"
+  },
+  "created_at": "2026-06-11T23:29:20Z",
+  "pid_xvfb": 0,
+  "pid_x11vnc": 0,
+  "pid_websockify": 5320,
+  "pid_xfce": 0
+}

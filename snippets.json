@@ -1,0 +1,36 @@
+{
+  "snippets": [
+    {
+      "title": "Express启动",
+      "language": "typescript",
+      "category": "web",
+      "tags": [
+        "express",
+        "server",
+        "startup"
+      ],
+      "code": "app.listen(PORT)",
+      "description": "Express服务器启动代码",
+      "id": "snip-1781187826340",
+      "createdAt": "2026-06-11T14:23:46.340Z",
+      "updatedAt": "2026-06-11T14:23:46.405Z",
+      "usageCount": 1
+    },
+    {
+      "title": "test",
+      "code": "x=1",
+      "id": "snip-1781192082646",
+      "createdAt": "2026-06-11T15:34:42.646Z",
+      "updatedAt": "2026-06-11T15:34:42.646Z",
+      "usageCount": 0
+    },
+    {
+      "title": "test",
+      "code": "x=1",
+      "id": "snip-1781192521701",
+      "createdAt": "2026-06-11T15:42:01.701Z",
+      "updatedAt": "2026-06-11T15:42:01.701Z",
+      "usageCount": 0
+    }
+  ]
+}

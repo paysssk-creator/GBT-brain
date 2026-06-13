@@ -1,0 +1,71 @@
+# ============================================
+# GBT ???? - ?????????
+# ============================================
+# ????:  gbt_creator  | gbt_cline | gbt_brain | gbt_halo
+# ============================================
+version: "3.8"
+
+services:
+  # ---- PostgreSQL 16 + pgvector (????/???) ----
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: gbt_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: gbt
+      POSTGRES_PASSWORD: gbt2024
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+    command: |
+      -c shared_buffers=1GB
+      -c effective_cache_size=3GB
+      -c maintenance_work_mem=256MB
+      -c max_connections=100
+      -c wal_buffers=16MB
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gbt"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ---- MySQL 8 (Halo CMS ??) ----
+  mysql:
+    image: mysql:8.0
+    container_name: gbt_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: gbt2024
+      MYSQL_DATABASE: gbt_halo
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ---- Redis 7 (??/??) ----
+  redis:
+    image: redis:7-alpine
+    container_name: gbt_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+  mysqldata:
+  redisdata:

@@ -1,0 +1,66 @@
+{
+  "projects": {
+    "C:/Users/ADMIN/GBTxiaotudouchuangzaozhushou": {
+      "projectDir": "C:/Users/ADMIN/GBTxiaotudouchuangzaozhushou",
+      "projectName": "GBTxiaotudouchuangzaozhushou",
+      "techStack": [
+        "Node.js",
+        "TypeScript",
+        "Docker Compose",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "entryPoints": [],
+      "configFiles": [
+        ".env"
+      ],
+      "recentDecisions": [
+        {
+          "id": "dec-1781187840410",
+          "date": "2026-06-11T14:24:00.410Z",
+          "topic": "架构",
+          "decision": "用ESM模块系统",
+          "reason": "Node.js原生支持"
+        }
+      ],
+      "openIssues": [],
+      "lastAnalyzed": "2026-06-11T14:24:00.401Z"
+    },
+    "C:\\Users\\ADMIN\\GBTxiaotudouchuangzaozhushou": {
+      "projectDir": "C:\\Users\\ADMIN\\GBTxiaotudouchuangzaozhushou",
+      "projectName": "GBTxiaotudouchuangzaozhushou",
+      "techStack": [
+        "Node.js",
+        "TypeScript",
+        "Docker Compose",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "entryPoints": [],
+      "configFiles": [
+        ".env"
+      ],
+      "recentDecisions": [],
+      "openIssues": [],
+      "lastAnalyzed": "2026-06-11T15:42:03.032Z"
+    },
+    "C:\\Users\\ADMIN\\GbtXiaotudouchuangzaozhushou": {
+      "projectDir": "C:\\Users\\ADMIN\\GbtXiaotudouchuangzaozhushou",
+      "projectName": "GbtXiaotudouchuangzaozhushou",
+      "techStack": [
+        "Node.js",
+        "TypeScript",
+        "Docker Compose",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "entryPoints": [],
+      "configFiles": [
+        ".env"
+      ],
+      "recentDecisions": [],
+      "openIssues": [],
+      "lastAnalyzed": "2026-06-11T21:31:25.869Z"
+    }
+  }
+}

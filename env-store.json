@@ -1,0 +1,85 @@
+{
+  "entries": [
+    {
+      "key": "DB_HOST",
+      "value": "ecd900f889906f1a70cbde8294db4d88:c3264671292f4708c6e5b2d1bc6dd24f:829b81987648d0369a1e82c92076",
+      "project": "test",
+      "server": "",
+      "category": "database",
+      "description": "数据库地址",
+      "createdAt": "2026-06-11T14:24:13.899Z",
+      "updatedAt": "2026-06-11T14:24:13.903Z"
+    },
+    {
+      "key": "API_KEY",
+      "value": "94994e615bd6fc8d63a7eb474177515c:d6ab354f71afbe0658e4c1c773129730:23efabb8e565b881d00d1ceb",
+      "project": "test",
+      "server": "",
+      "category": "api",
+      "description": "DeepSeek API Key",
+      "createdAt": "2026-06-11T14:24:13.906Z",
+      "updatedAt": "2026-06-11T14:26:37.570Z"
+    },
+    {
+      "key": "TEST_KEY",
+      "value": "3655a28f027af83a6277cadd6abec56e:2073adfd71c0fa391aeadce4e21b9bd2:e17b2dffa6d5caae047703a79fd7e4",
+      "project": "test",
+      "server": "",
+      "category": "api",
+      "description": "",
+      "createdAt": "2026-06-11T14:26:04.051Z",
+      "updatedAt": "2026-06-11T14:26:04.055Z"
+    },
+    {
+      "key": "K1",
+      "value": "7cde40a94c786b502df6cf0d9f62fc26:14f34dbc3a5dd14dd2ee48656224358d:371b",
+      "project": "",
+      "server": "",
+      "category": "custom",
+      "description": "",
+      "createdAt": "2026-06-11T15:34:43.444Z",
+      "updatedAt": "2026-06-11T15:42:03.985Z"
+    },
+    {
+      "key": "TEST_EXPORT_X",
+      "value": "ce661e4460997024734bc593d2ffc013:94fb9ff66cfa67e450130c2746c2ba84:849709f23c5395cccc97de90",
+      "project": "test",
+      "server": "",
+      "category": "api",
+      "description": "",
+      "createdAt": "2026-06-11T15:46:37.389Z",
+      "updatedAt": "2026-06-11T15:46:37.397Z"
+    },
+    {
+      "key": "K",
+      "value": "b68238477787e2d7d953970dcc24da3f:5778ef0dcdfd04c6cde48799b662ebba:44",
+      "project": "",
+      "server": "",
+      "category": "custom",
+      "description": "",
+      "createdAt": "2026-06-11T15:59:12.142Z",
+      "updatedAt": "2026-06-11T16:05:48.886Z"
+    },
+    {
+      "key": "TEST_X",
+      "value": "a911cb3a0c48c255ed435ab96bab6d1d:f7a7dc21f2822d289ffafb11a5cfd5be:2d8630",
+      "project": "",
+      "server": "",
+      "category": "api",
+      "description": "",
+      "createdAt": "2026-06-11T16:23:56.298Z",
+      "updatedAt": "2026-06-11T16:23:56.298Z"
+    },
+    {
+      "key": "E2E_TEST",
+      "value": "ac6ff2ee153b8c7abe20c7593f548676:a22dcef368f5e162aa4dbccb25bdc33f:e0cfc90746",
+      "project": "test",
+      "server": "",
+      "category": "custom",
+      "description": "",
+      "createdAt": "2026-06-11T21:27:50.355Z",
+      "updatedAt": "2026-06-11T21:27:50.355Z"
+    }
+  ],
+  "version": 1
+}
