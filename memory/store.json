@@ -1,1 +1,1 @@
-[{"id":"59baadefb706","ts":1781215762919,"kind":"chat","text":"对话: 用户「你好」","tags":["chat"],"confidence":0.49,"hits":0}]
+[{"id":"59baadefb706","ts":1781215762919,"kind":"chat","text":"对话: 用户「你好」","tags":["chat"],"confidence":0.49,"hits":0},{"id":"fix-20260613-001","ts":1781367200000,"kind":"evolve","text":"修复: clean_chrome命令语法错误(WINDOWTITLE过滤器缺值)已修正, 创建evolve-logs目录, 同步DeepSeek API Key到桌宠版","tags":["fix","evolve","automation"],"confidence":0.95,"hits":0}]

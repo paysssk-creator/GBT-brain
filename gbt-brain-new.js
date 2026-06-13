@@ -48,7 +48,7 @@ const ACTIONS = [
   { id: 'scan', desc: '代码安全扫描', cmd: 'node "' + path.join(CLINE, 'scanner.js') + '" --project "' + GBT + '"' },
   { id: 'audit', desc: '项目健康审计', cmd: 'node "' + path.join(CLINE, 'audit.js') + '" --project "' + GBT + '"' },
   { id: 'evolve', desc: '自我进化', cmd: 'node "' + path.join(CLINE, 'self-evolve.js') + '" --project "' + GBT + '" --dry-run' },
-  { id: 'clean_chrome', desc: '清理Chrome残留', cmd: 'taskkill /F /FI "IMAGENAME eq chrome.exe" /FI "WINDOWTITLE eq" 2>nul' },
+  { id: 'clean_chrome', desc: '清理Chrome残留', cmd: 'taskkill /F /FI "IMAGENAME eq chrome.exe" 2>nul' },
   { id: 'git_backup', desc: '提交未保存改动', cmd: 'git -C "' + GBT + '" add -A && git -C "' + GBT + '" commit -m "auto-brain-backup"' },
   { id: 'health', desc: '压力测试体检', cmd: 'node "' + path.join(CLINE, 'stress-test.js') + '" --project "' + GBT + '"' },
   { id: 'wait', desc: '等待下一轮', cmd: 'echo system healthy' },
