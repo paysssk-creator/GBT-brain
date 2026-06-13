@@ -1611,6 +1611,58 @@
       },
       "result": "success",
       "detail": "[master 779acac] auto-brain-backup\n 7 files changed, 161 insertions(+), 52 deletions(-)"
+    },
+    {
+      "cycle": 63,
+      "ts": "2026-06-13T17:36:02.798Z",
+      "state": {
+        "ts": "2026-06-13T17:36:00.299Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.9",
+          "totalGB": "7.4",
+          "usagePct": "74%"
+        },
+        "processes": 320,
+        "chromeTabs": 14,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 7
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "Git未提交7个，超过3个阈值，触发备份提交"
+      },
+      "result": "success",
+      "detail": "[master d9748a8] auto-brain-backup\n 2 files changed, 43 insertions(+), 2 deletions(-)"
+    },
+    {
+      "cycle": 64,
+      "ts": "2026-06-13T17:36:10.845Z",
+      "state": {
+        "ts": "2026-06-13T17:36:06.553Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "76%"
+        },
+        "processes": 321,
+        "chromeTabs": 15,
+        "lastScan": {
+          "total": 54,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
     }
   ],
   "learnings": [
@@ -1709,11 +1761,16 @@
       "ts": "2026-06-13T17:36:01.752Z",
       "action": "git_backup",
       "learning": "动作 git_backup 成功，[master 779acac] auto-brain-backup\n 7 files change"
+    },
+    {
+      "ts": "2026-06-13T17:36:02.798Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master d9748a8] auto-brain-backup\n 2 files change"
     }
   ],
   "stats": {
-    "totalActions": 62,
-    "successActions": 18,
+    "totalActions": 64,
+    "successActions": 19,
     "failActions": 1
   }
 }
