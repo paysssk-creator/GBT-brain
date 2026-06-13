@@ -175,3 +175,7 @@
 {"ts":"2026-06-13T13:57:45.133Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Process | Where-Object { $_.MainWindowTitle -ne '' } | Select-Object MainWindowTitle, ProcessName | Format-Table -AutoSize","shell":"powershell"}}
 {"ts":"2026-06-13T13:58:04.282Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Process chrome | Select-Object Id, MainWindowTitle, StartTime | Format-Table -AutoSize","shell":"powershell"}}
 {"ts":"2026-06-13T13:58:04.676Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path \"$env:USERPROFILE\\.gbt\" -Recurse -Depth 2 | Select-Object FullName | Format-Table -AutoSize","shell":"powershell"}}
+{"ts":"2026-06-13T16:06:14.991Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"findstr /i /s \"window.location navigate redirect vercel\" C:\\Users\\ADMIN\\GBTxiaotudouquannengcaopanshou\\desktop_pet\\frontend\\src\\*.jsx C:\\Users\\ADMIN\\GBTxiaotudouquannengcaopanshou\\desktop_pet\\frontend\\src\\pages\\*.jsx C:\\Users\\ADMIN\\GBTxiaotudouquannengcaopanshou\\desktop_pet\\frontend\\src\\components\\*.jsx 2>nul","shell":"cmd"}}
+{"ts":"2026-06-13T16:08:59.434Z","user":"ADMIN","category":"process","action":"list","data":{"filter":"python"}}
+{"ts":"2026-06-13T16:08:59.869Z","user":"ADMIN","category":"process","action":"list","data":{"filter":"node"}}
+{"ts":"2026-06-13T16:09:00.290Z","user":"ADMIN","category":"process","action":"list","data":{"filter":"electron"}}
