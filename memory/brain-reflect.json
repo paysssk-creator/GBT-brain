@@ -1299,6 +1299,32 @@
       },
       "result": "success",
       "detail": "�ɹ�: ����ֹ PID Ϊ 22320 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26588 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 30292 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 11524 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 27188 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 24060 �Ľ��̡�\r\n�ɹ�: ����ֹ PID"
+    },
+    {
+      "cycle": 51,
+      "ts": "2026-06-13T17:29:26.043Z",
+      "state": {
+        "ts": "2026-06-13T17:29:21.935Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.1",
+          "totalGB": "7.4",
+          "usagePct": "71%"
+        },
+        "processes": 300,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 5
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "5个文件未提交"
+      },
+      "result": "success",
+      "detail": "[master 9745c08] auto-brain-backup\n 5 files changed, 548 insertions(+), 3 deletions(-)\n create mode 100644 clean-chrome-cache.ps1\n create mode 100644 voice-call-key.json"
     }
   ],
   "learnings": [
@@ -1367,11 +1393,16 @@
       "ts": "2026-06-13T17:28:21.855Z",
       "action": "clean_chrome",
       "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 22320 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26"
+    },
+    {
+      "ts": "2026-06-13T17:29:26.043Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master 9745c08] auto-brain-backup\n 5 files change"
     }
   ],
   "stats": {
-    "totalActions": 50,
-    "successActions": 12,
+    "totalActions": 51,
+    "successActions": 13,
     "failActions": 1
   }
 }

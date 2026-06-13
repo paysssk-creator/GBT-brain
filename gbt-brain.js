@@ -48,7 +48,7 @@ const ACTIONS = [
   { id: 'scan', desc: '代码安全扫描', cmd: 'node "' + path.join(CLINE, 'scanner.js') + '" --project "' + GBT + '"' },
   { id: 'audit', desc: '项目健康审计', cmd: 'node "' + path.join(CLINE, 'audit.js') + '" --project "' + GBT + '"' },
   { id: 'evolve', desc: '自我进化', cmd: 'node "' + path.join(CLINE, 'self-evolve.js') + '" --project "' + GBT + '" --dry-run' },
-  { id: 'clean_chrome', desc: '清理Chrome缓存(不杀进程)', cmd: 'powershell -NoProfile -Command "Get-ChildItem -Path \\"$env:LOCALAPPDATA\\\\Google\\\\Chrome\\\\User Data\\\\*\\\\Cache\\" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue; Write-Host cache-cleaned"' },
+  { id: 'clean_chrome', desc: '清理Chrome缓存(只清缓存,不动浏览器窗口)', cmd: 'powershell -NoProfile -ExecutionPolicy Bypass -File "' + path.join(GBT, 'clean-chrome-cache.ps1') + '"' },
   { id: 'git_backup', desc: '提交未保存改动', cmd: 'git -C "' + GBT + '" add -A && git -C "' + GBT + '" commit -m "auto-brain-backup"' },
   { id: 'health', desc: '压力测试体检', cmd: 'node "' + path.join(CLINE, 'stress-test.js') + '" --project "' + GBT + '"' },
   { id: 'wait', desc: '等待下一轮', cmd: 'echo system healthy' },
