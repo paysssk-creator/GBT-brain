@@ -1,0 +1,260 @@
+{
+  "timestamp": "2026-06-13T15:49:39.575Z",
+  "project": "C:\\Users\\ADMIN\\.gbt",
+  "issues": [
+    {
+      "ruleId": "SEC-003",
+      "ruleName": "xss-innerHTML",
+      "severity": "medium",
+      "file": "desktop\\noVNC\\app\\ui.js",
+      "line": 1188,
+      "snippet": "document.getElementById('noVNC_fingerprint').innerHTML = fingerprint;",
+      "description": "直接设置 innerHTML 可能导致 XSS"
+    },
+    {
+      "ruleId": "QUAL-002",
+      "ruleName": "debugger-statement",
+      "severity": "medium",
+      "file": "desktop\\noVNC\\core\\util\\browser.js",
+      "line": 15,
+      "snippet": "// requried for Chrome debugger",
+      "description": "代码中残留 debugger 语句"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 298,
+      "snippet": "client.sendCredentials({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 299,
+      "snippet": "expect(client._rfbCredentials).to.deep.equal({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 304,
+      "snippet": "client.sendCredentials({ password: 'pass' });",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1248,
+      "snippet": "client._rfbCredentials = { password: 'passwd' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1261,
+      "snippet": "client._rfbCredentials = { password: 'passwd' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1287,
+      "snippet": "client._rfbCredentials = { password: 'password'};",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1296,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1401,
+      "snippet": "password: 'password123456' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1423,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1454,
+      "snippet": "password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1628,
+      "snippet": "client._rfbCredentials = { username: 'username', password: 'password' };",
+      "description": "硬编码密码"
+    },
+    {
+      "ruleId": "SEC-004",
+      "ruleName": "hardcoded-password",
+      "severity": "high",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1674,
+      "snippet": "client._rfbCredentials = { username: 'a'.repeat(300), password: 'a'.repeat(300) };",
+      "description": "硬编码密码"
+    }
+  ],
+  "actions": [
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\app\\ui.js",
+      "line": 1188,
+      "rule": "xss-innerHTML",
+      "severity": "medium",
+      "description": "直接设置 innerHTML 可能导致 XSS",
+      "autoFixable": false
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\core\\util\\browser.js",
+      "line": 15,
+      "rule": "debugger-statement",
+      "severity": "medium",
+      "description": "代码中残留 debugger 语句",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 298,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 299,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 304,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1248,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1261,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1287,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1296,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1401,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1423,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1454,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1628,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    },
+    {
+      "type": "code_fix",
+      "file": "desktop\\noVNC\\tests\\test.rfb.js",
+      "line": 1674,
+      "rule": "hardcoded-password",
+      "severity": "high",
+      "description": "硬编码密码",
+      "autoFixable": true
+    }
+  ]
+}

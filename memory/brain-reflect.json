@@ -25,12 +25,45 @@
       },
       "result": "wait",
       "detail": ""
+    },
+    {
+      "cycle": 2,
+      "ts": "2026-06-13T15:49:43.321Z",
+      "state": {
+        "ts": "2026-06-13T15:49:38.120Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.3",
+          "totalGB": "7.4",
+          "usagePct": "95%"
+        },
+        "processes": 311,
+        "chromeTabs": 20,
+        "lastScan": {
+          "total": 33,
+          "high": 12
+        },
+        "gitDirty": 1
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "内存仅剩0.3GB，低于1GB阈值，需立即清理Chrome残留释放资源，确保系统稳定运行。"
+      },
+      "result": "fail",
+      "detail": "Command failed: taskkill /F /FI \"IMAGENAME eq chrome.exe\" /FI \"WINDOWTITLE eq\" 2>nul"
     }
   ],
-  "learnings": [],
+  "learnings": [
+    {
+      "ts": "2026-06-13T15:49:43.321Z",
+      "action": "clean_chrome",
+      "error": "Command failed: taskkill /F /FI \"IMAGENAME eq chrome.exe\" /FI \"WINDOWTITLE eq\" 2>nul",
+      "learning": "动作 clean_chrome 失败，下次降级处理"
+    }
+  ],
   "stats": {
-    "totalActions": 1,
+    "totalActions": 2,
     "successActions": 0,
-    "failActions": 0
+    "failActions": 1
   }
 }
