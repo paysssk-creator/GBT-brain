@@ -220,3 +220,4 @@
 {"ts":"2026-06-13T17:34:42.530Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Content \"C:\\Users\\ADMIN\\.gbt\\evolve-logs\\2026-06-13.md\" -Raw","shell":"powershell"}}
 {"ts":"2026-06-13T17:34:42.933Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Content \"C:\\Users\\ADMIN\\GBTxiaotudouquannengcaopanshou\\start.bat\" -Raw","shell":"powershell"}}
 {"ts":"2026-06-13T17:34:53.551Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"git -C \"C:\\Users\\ADMIN\\.gbt\" add -A && git -C \"C:\\Users\\ADMIN\\.gbt\" commit -m \"pre-fix: 修复启动链+大脑循环+密钥集成前备份\"","shell":"powershell"}}
+{"ts":"2026-06-13T17:34:57.677Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"git -C \"C:\\Users\\ADMIN\\.gbt\" add -A; git -C \"C:\\Users\\ADMIN\\.gbt\" commit -m \"pre-fix: 修复启动链+大脑循环+密钥集成前备份\"","shell":"powershell"}}
