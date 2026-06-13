@@ -493,6 +493,58 @@
       },
       "result": "wait",
       "detail": ""
+    },
+    {
+      "cycle": 20,
+      "ts": "2026-06-13T17:02:18.548Z",
+      "state": {
+        "ts": "2026-06-13T17:02:14.587Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.9",
+          "totalGB": "7.4",
+          "usagePct": "74%"
+        },
+        "processes": 308,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 5
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "5个文件未提交"
+      },
+      "result": "success",
+      "detail": "[master 2b39c55] auto-brain-backup\n 1 file changed, 7 insertions(+)"
+    },
+    {
+      "cycle": 21,
+      "ts": "2026-06-13T17:02:34.810Z",
+      "state": {
+        "ts": "2026-06-13T17:02:30.805Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.0",
+          "totalGB": "7.4",
+          "usagePct": "73%"
+        },
+        "processes": 302,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
     }
   ],
   "learnings": [
@@ -511,11 +563,16 @@
       "ts": "2026-06-13T16:59:06.509Z",
       "action": "clean_chrome",
       "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 32148 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 32"
+    },
+    {
+      "ts": "2026-06-13T17:02:18.548Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master 2b39c55] auto-brain-backup\n 1 file changed"
     }
   ],
   "stats": {
-    "totalActions": 19,
-    "successActions": 2,
+    "totalActions": 21,
+    "successActions": 3,
     "failActions": 1
   }
 }
