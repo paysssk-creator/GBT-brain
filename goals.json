@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "created": "2026-06-13",
+  "description": "GBT小土豆全能开发者 持久化目标系统",
+  "goals": [
+    { "id": "g1", "title": "保持系统健康", "metric": "压测10/10通过", "priority": "highest", "interval": "6h" },
+    { "id": "g2", "title": "代码安全零高危漏洞", "metric": "扫描危急=0", "priority": "high", "interval": "daily" },
+    { "id": "g3", "title": "自主进化迭代", "metric": "每日至少1次进化", "priority": "high", "interval": "daily" },
+    { "id": "g4", "title": "内存保持>2GB空闲", "metric": "freeMem>2GB", "priority": "medium", "interval": "30min" },
+    { "id": "g5", "title": "Chrome进程<15个", "metric": "chromeTabs<15", "priority": "medium", "interval": "30min" },
+    { "id": "g6", "title": "Git无长时间未提交改动", "metric": "gitDirty=0", "priority": "low", "interval": "1h" },
+    { "id": "g7", "title": "发现新问题自动修复", "metric": "scanFind→autoFix", "priority": "medium", "interval": "on-scan" }
+  ],
+  "duoplus": {
+    "enabled": false,
+    "capabilities": ["打电话","接电话","微信聊天","语音通话","视频通话","发朋友圈"],
+    "loginUrl": "https://my.duoplus.cn",
+    "note": "用户提供账号密码后通过Playwright自动化操作"
+  }
+}
