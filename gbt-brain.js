@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /**
- * ⚕ GBT小土豆全能开发者 — AI自主大脑 v6.0
- * 闭环: 观察→分析→判断→规划→决策→执行→反思→记忆
+ * ⚕ GBT小土豆全能开发者 — AI自主大脑 v3.0
  * 持续观察系统状态 → DeepSeek思考决策 → 执行动作 → 观察结果 → 循环
  */
 const { execSync } = require('child_process');
@@ -46,38 +45,14 @@ function observe() {
 }
 
 const ACTIONS = [
-  { id: 'scan', desc: '代码安全扫描', risk: 'low', urgency: 3, cmd: 'node "' + path.join(CLINE, 'scanner.js') + '" --project "' + GBT + '"' },
-  { id: 'audit', desc: '项目健康审计', risk: 'low', urgency: 2, cmd: 'node "' + path.join(CLINE, 'audit.js') + '" --project "' + GBT + '"' },
-  { id: 'evolve', desc: '自我进化', risk: 'medium', urgency: 2, cmd: 'node "' + path.join(CLINE, 'self-evolve.js') + '" --project "' + GBT + '" --dry-run' },
-  { id: 'clean_chrome', desc: '清理Chrome残留', risk: 'low', urgency: 5, cmd: 'taskkill /F /FI "IMAGENAME eq chrome.exe" 2>nul' },
-  { id: 'git_backup', desc: '提交未保存改动', risk: 'low', urgency: 4, cmd: 'git -C "' + GBT + '" add -A && git -C "' + GBT + '" commit -m "auto-brain-backup"' },
-  { id: 'health', desc: '压力测试体检', risk: 'low', urgency: 1, cmd: 'node "' + path.join(CLINE, 'stress-test.js') + '" --project "' + GBT + '"' },
-  { id: 'wait', desc: '等待下一轮', risk: 'none', urgency: 0, cmd: 'echo system healthy' },
-  // v6.0 新增工具
-  { id: 'auto_fix', desc: '自动修复扫描发现的问题', risk: 'medium', urgency: 4, cmd: 'node "' + path.join(CLINE, 'auto-fix.js') + '" --project "' + GBT + '"' },
-  { id: 'self_evolve_live', desc: '自我进化(实跑)', risk: 'high', urgency: 2, cmd: 'node "' + path.join(CLINE, 'self-evolve.js') + '" --project "' + GBT + '"' },
-  { id: 'desktop_check', desc: '截屏检查桌面状态', risk: 'low', urgency: 1, cmd: 'node "' + path.join(CLINE, 'desktop-control.js') + '" screen' },
-  { id: 'browser_open', desc: '打开浏览器指定页面', risk: 'low', urgency: 1, cmd: 'start "" "http://localhost:6080"' },
-  { id: 'notify', desc: '向用户发送通知', risk: 'low', urgency: 1, cmd: 'echo "NOTIFY: Brain cycle complete" > "' + path.join(GBT, 'last-notify.txt') + '"' },
+  { id: 'scan', desc: '代码安全扫描', cmd: 'node "' + path.join(CLINE, 'scanner.js') + '" --project "' + GBT + '"' },
+  { id: 'audit', desc: '项目健康审计', cmd: 'node "' + path.join(CLINE, 'audit.js') + '" --project "' + GBT + '"' },
+  { id: 'evolve', desc: '自我进化', cmd: 'node "' + path.join(CLINE, 'self-evolve.js') + '" --project "' + GBT + '" --dry-run' },
+  { id: 'clean_chrome', desc: '清理Chrome残留', cmd: 'taskkill /F /FI "IMAGENAME eq chrome.exe" 2>nul' },
+  { id: 'git_backup', desc: '提交未保存改动', cmd: 'git -C "' + GBT + '" add -A && git -C "' + GBT + '" commit -m "auto-brain-backup"' },
+  { id: 'health', desc: '压力测试体检', cmd: 'node "' + path.join(CLINE, 'stress-test.js') + '" --project "' + GBT + '"' },
+  { id: 'wait', desc: '等待下一轮', cmd: 'echo system healthy' },
 ];
-
-const GOALS_FILE = path.join(GBT, 'goals.json');
-function loadGoals() { try { return JSON.parse(fs.readFileSync(GOALS_FILE, 'utf-8')); } catch { return { goals: [] }; } }
-function checkGoals(s) {
-  const g = loadGoals();
-  const results = [];
-  for (const goal of g.goals || []) {
-    let met = true, detail = '';
-    if (goal.id === 'g1') { /* 压测6h一次, 由schedule驱动 */ }
-    else if (goal.id === 'g2') { met = (s.lastScan?.high || 0) === 0; detail = '高危:' + (s.lastScan?.high || 0); }
-    else if (goal.id === 'g4') { met = parseFloat(s.memory?.freeGB || 0) > 2; detail = '空闲:' + (s.memory?.freeGB || 0) + 'GB'; }
-    else if (goal.id === 'g5') { met = s.chromeTabs < 15; detail = 'Chrome:' + s.chromeTabs; }
-    else if (goal.id === 'g6') { met = s.gitDirty === 0; detail = 'Git未提交:' + s.gitDirty; }
-    else if (goal.id === 'g7') { met = (s.lastScan?.high || 0) === 0; detail = '需自愈:' + (!met); }
-    if (!met) results.push({ goal: goal.id, title: goal.title, detail, priority: goal.priority });
-  }
-  return results;
-}
 
 function ruleDecide(s) {
   if (parseFloat(s.memory?.freeGB || 99) < 1) return { action: 'clean_chrome', reason: '内存' + s.memory?.freeGB + 'GB' };
@@ -102,7 +77,7 @@ async function callLLM(prompt) {
 }
 
 async function think(s) {
-  if (!API_KEY) { log('BRAIN: 无API Key,规则决策'); return ruleDecide(s); }
+  if (!API_KEY) { log('② ANALYZE: 规则分析'); return ruleDecide(s); }
   const caps = ACTIONS.map(c => `- ${c.id}: ${c.desc}`).join('\n');
   const p = `你是GBT小土豆的AI大脑。观察系统决定行动。\n【状态】内存:${s.memory?.freeGB}GB/${s.memory?.totalGB}GB(${s.memory?.usagePct}) Chrome:${s.chromeTabs} 进程:${s.processes} 扫描问题:${s.lastScan?.total||0} Git未提交:${s.gitDirty}\n【可做】\n${caps}\n【规则】内存<1GB→clean_chrome Chrome>20→clean_chrome Git>3→git_backup 超过6h没扫→scan 否则→wait\n输出JSON:{"action":"id","reason":"理由"}`;
   try {
@@ -110,14 +85,12 @@ async function think(s) {
     let j = {};
     try { j = JSON.parse(r.match(/\{[\s\S]*\}/)?.[0] || '{}'); } catch {}
     if (!j.action) {
-
-  if (!j.action && j.best) j.action = j.best;
       // 尝试从文本中提取action关键词
       const txt = (r || '').toLowerCase();
       for (const a of ACTIONS) { if (txt.includes(a.id)) { j.action = a.id; j.reason = 'AI推导'; break; } }
     }
     if (!j.action) j = ruleDecide(s);
-    log('② JUDGE->③ DECIDE: ' + (j.action || 'wait') + ' | ' + (j.reason || ''));
+    log('BRAIN: 思考→' + (j.action || 'wait') + ' (' + (j.reason || '') + ')');
     return j;
   } catch (e) { log('BRAIN: LLM失败→' + e.message + ',降级规则'); return ruleDecide(s); }
 }
@@ -167,10 +140,10 @@ async function reflect(s, d, r) {
 
 async function brainLoop() {
   log('══════════════════════════════════════');
-  log('⚕ GBT AI自主大脑 v5.0 启动');
+  log('⚕ GBT AI自主大脑 v4.0 启动');
   log('   模型: ' + (API_KEY ? API_MODEL : '规则引擎'));
   log('   间隔: ' + (INTERVAL / 1000) + '秒');
-  log('   闭环: 观察→分析→判断→决策→执行→反思→记忆');
+  log('   闭环: 观察→思考→执行→反思→记忆');
   log('══════════════════════════════════════');
   let cycle = 0;
   while (true) {
@@ -181,38 +154,25 @@ async function brainLoop() {
     const s = observe();
     log('① OBSERVE: 内存' + s.memory?.freeGB + 'GB | Chrome' + s.chromeTabs + ' | Git' + s.gitDirty + ' | 扫描' + (s.lastScan?.total || 0) + '问题');
 
-    // ② 目标检查
-    const unmet = checkGoals(s);
-    if (unmet.length > 0) {
-      log('② GOALS: ' + unmet.length + '个未达标 → ' + unmet.map(g => g.title + '(' + g.detail + ')').join(' '));
-      // 自愈逻辑: 高危问题>0 → 触发auto_fix
-      if (unmet.find(g => g.goal === 'g2' || g.goal === 'g7')) {
-        log('🩺 SELF-HEAL: 检测到高危问题，自动修复...');
-        execute('auto_fix');
-      }
-    } else {
-      log('② GOALS: 全部达标 ✅');
-    }
-
-    // ③ 分析+判断+决策
+    // ② 思考
     const d = await think(s);
 
-    // ④ 执行
+    // ③ 执行
     let r = null;
     if (d.action && d.action !== 'wait') {
       r = execute(d.action);
-      log('④ EXEC: ' + (r.ok ? '✅' : '❌') + ' ' + (r.output || r.error || ''));
+      log('③ EXEC: ' + (r.ok ? '✅' : '❌') + ' ' + (r.output || r.error || ''));
     } else {
-      log('④ EXEC: 跳过');
+      log('③ EXEC: 跳过');
     }
 
-    // ⑤ 反思
+    // ④ 反思
     const mem = await reflect(s, d, r);
 
-    // ⑥ 记忆总结
+    // ⑤ 记忆总结
     const total = mem.stats.totalActions;
     const rate = total > 0 ? (mem.stats.successActions / total * 100).toFixed(0) : '-';
-    log('⑤⑥ REFLECT+MEM: 总' + total + '次 | 成功率' + rate + '% | 教训' + mem.learnings.length + '条');
+    log('④⑤ REFLECT+MEM: 总' + total + '次 | 成功率' + rate + '% | 教训' + mem.learnings.length + '条');
 
     log('SLEEP: ' + (INTERVAL / 1000) + 's...');
     await new Promise(r => setTimeout(r, INTERVAL));
