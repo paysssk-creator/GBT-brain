@@ -21,7 +21,7 @@ class BrainMirror:
     def project(self):
         """?Brain????????????"""
         # ??????
-        # 全量拉取所有知识(通过维度关键词搜索)
+        # 鍏ㄩ噺鎷夊彇鎵€鏈夌煡璇?閫氳繃缁村害鍏抽敭璇嶆悳绱?
         seen = set()
         all_items = []
         for dim_id, dim_info in DIMENSIONS.items():

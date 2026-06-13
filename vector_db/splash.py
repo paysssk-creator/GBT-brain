@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 █████████████████████████████████████████████████████████████████
   GBT Brain Splash - 启动画面
@@ -6,6 +6,13 @@
 █████████████████████████████████████████████████████████████████
 """
 import sys, os, time, random
+
+def _safe_write(text):
+    try:
+        sys.stdout.write(text)
+    except UnicodeEncodeError:
+        sys.stdout.write(text.encode('ascii', errors='replace').decode('ascii'))
+
 
 GT = "GBT"
 
@@ -110,11 +117,11 @@ def splash(style="active", delay=0.02):
 
     for line in art.strip().split("\n"):
         if "╔" in line or "╚" in line or "═" in line:
-            sys.stdout.write(COLORS.get("border", "") + line + COLORS["reset"] + "\n")
+            _safe_write(COLORS.get("border", "") + line + COLORS["reset"] + "\n")
         elif "GBT" in line or "xiaotudou" in line or "小土豆" in line or "v3.0" in line:
-            sys.stdout.write(COLORS.get("head", "") + line + COLORS["reset"] + "\n")
+            _safe_write(COLORS.get("head", "") + line + COLORS["reset"] + "\n")
         else:
-            sys.stdout.write(COLORS.get("body", "") + line + COLORS["reset"] + "\n")
+            _safe_write(COLORS.get("body", "") + line + COLORS["reset"] + "\n")
         if delay:
             time.sleep(delay)
             sys.stdout.flush()
