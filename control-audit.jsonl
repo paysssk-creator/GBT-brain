@@ -208,3 +208,8 @@
 {"ts":"2026-06-13T17:11:45.839Z","user":"ADMIN","category":"process","action":"kill","data":{"target":24612}}
 {"ts":"2026-06-13T17:11:46.128Z","user":"ADMIN","category":"process","action":"kill","data":{"target":22512}}
 {"ts":"2026-06-13T17:14:03.623Z","user":"ADMIN","category":"process","action":"kill","data":{"target":10404}}
+{"ts":"2026-06-13T17:30:36.575Z","user":"ADMIN","category":"process","action":"kill","data":{"target":"node.exe"}}
+{"ts":"2026-06-13T17:33:27.411Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path \"C:\\Users\\ADMIN\" -Directory | Where-Object { $_.Name -like \"*GBT*\" -or $_.Name -like \"*caopan*\" -or $_.Name -like \"*trade*\" -or $_.Name -like \"*cline*\" -or $_.Name -like \"*lopay*\" } | Select-Object Name, FullName","shell":"powershell"}}
+{"ts":"2026-06-13T17:33:27.866Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-Process | Where-Object { $_.ProcessName -like \"*chrome*\" -or $_.ProcessName -like \"*edge*\" -or $_.ProcessName -like \"*browser*\" -or $_.ProcessName -like \"*code*\" -or $_.ProcessName -like \"*node*\" } | Select-Object ProcessName, Id, StartTime | Format-Table -AutoSize","shell":"powershell"}}
+{"ts":"2026-06-13T17:33:28.310Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"git -C \"C:\\Users\\ADMIN\\.cline\" log --oneline -10 2>&1","shell":"powershell"}}
+{"ts":"2026-06-13T17:33:44.837Z","user":"ADMIN","category":"shell","action":"exec","data":{"command":"Get-ChildItem -Path \"C:\\Users\\ADMIN\\GBTxiaotudouquannengcaopanshou\" -Directory | Select-Object Name","shell":"powershell"}}

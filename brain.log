@@ -652,3 +652,90 @@ Node.js v24.15.0
 [2026-06-13 17:30:27] ① OBSERVE: 内存1.2GB | Chrome19 | Git4 | 扫描50问题
 [2026-06-13 17:30:29] BRAIN: 思考→git_backup (Git未提交改动为4，超过阈值3，触发自动备份提交。)
 [2026-06-13 17:30:29] EXEC: git_backup 提交未保存改动
+[2026-06-13 17:30:30] ③ EXEC: OK [master f3e06c6] auto-brain-backup
+ 4 files changed, 51 insertions(+), 4 deletions(-)
+[2026-06-13 17:30:30] REFLECT: 成功经验 → 动作 git_backup 成功，[master f3e06c6] auto-brain-backup
+ 4 files change
+[2026-06-13 17:30:30] ④⑤ REFLECT+MEM: total=52 | rate=27% | lessons=15
+[2026-06-13 17:30:30] brain-cycle-end
+[2026-06-13 17:30:30] loop#16 ← brain done
+[2026-06-13 17:30:30] sleeping 60s...
+[2026-06-13 17:30:40] ==========================================
+[2026-06-13 17:30:40] GBT AI Loop Brain v5.1 — Self-Preserving
+[2026-06-13 17:30:40]    mode: one-shot brain + restart = fresh code
+[2026-06-13 17:30:40]    interval: 60s
+[2026-06-13 17:30:40]    preserve: log<1MB | memory<100learnings | context guard
+[2026-06-13 17:30:40] ==========================================
+[2026-06-13 17:30:40] loop#1 → spawning gbt-brain.js
+[2026-06-13 17:30:40] brain-cycle-start
+[2026-06-13 17:30:40] ── 周期 #53 ──
+[2026-06-13 17:30:41] ① OBSERVE: 内存1.2GB | Chrome19 | Git3 | 扫描50问题
+[2026-06-13 17:30:44] BRAIN: 思考→wait (系统正常)
+[2026-06-13 17:30:44] ③ EXEC: skip
+[2026-06-13 17:30:44] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:30:44] ④⑤ REFLECT+MEM: total=53 | rate=26% | lessons=15
+[2026-06-13 17:30:44] brain-cycle-end
+[2026-06-13 17:30:44] loop#1 ← brain done
+[2026-06-13 17:30:44] sleeping 60s...
+[2026-06-13 17:31:30] loop#17 → spawning gbt-brain.js
+[2026-06-13 17:31:30] brain-cycle-start
+[2026-06-13 17:31:30] ── 周期 #54 ──
+[2026-06-13 17:31:30] ① OBSERVE: 内存1.5GB | Chrome15 | Git3 | 扫描50问题
+[2026-06-13 17:31:34] BRAIN: 思考→wait (系统正常)
+[2026-06-13 17:31:34] ③ EXEC: skip
+[2026-06-13 17:31:34] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:31:34] ④⑤ REFLECT+MEM: total=54 | rate=26% | lessons=15
+[2026-06-13 17:31:34] brain-cycle-end
+[2026-06-13 17:31:34] loop#17 ← brain done
+[2026-06-13 17:31:34] sleeping 60s...
+[2026-06-13 17:31:44] loop#2 → spawning gbt-brain.js
+[2026-06-13 17:31:44] brain-cycle-start
+[2026-06-13 17:31:44] ── 周期 #55 ──
+[2026-06-13 17:31:45] ① OBSERVE: 内存1.4GB | Chrome14 | Git3 | 扫描50问题
+[2026-06-13 17:31:48] BRAIN: 思考→wait (AI推导)
+[2026-06-13 17:31:48] ③ EXEC: skip
+[2026-06-13 17:31:48] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:31:48] ④⑤ REFLECT+MEM: total=55 | rate=25% | lessons=15
+[2026-06-13 17:31:48] brain-cycle-end
+[2026-06-13 17:31:48] loop#2 ← brain done
+[2026-06-13 17:31:48] sleeping 60s...
+[2026-06-13 17:32:34] loop#18 → spawning gbt-brain.js
+[2026-06-13 17:32:34] brain-cycle-start
+[2026-06-13 17:32:34] ── 周期 #56 ──
+[2026-06-13 17:32:35] ① OBSERVE: 内存1.3GB | Chrome14 | Git3 | 扫描50问题
+[2026-06-13 17:32:38] BRAIN: 思考→wait (系统正常)
+[2026-06-13 17:32:38] ③ EXEC: skip
+[2026-06-13 17:32:38] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:32:38] ④⑤ REFLECT+MEM: total=56 | rate=25% | lessons=15
+[2026-06-13 17:32:38] brain-cycle-end
+[2026-06-13 17:32:38] loop#18 ← brain done
+[2026-06-13 17:32:38] sleeping 60s...
+[2026-06-13 17:32:48] loop#3 → spawning gbt-brain.js
+[2026-06-13 17:32:48] brain-cycle-start
+[2026-06-13 17:32:48] ── 周期 #57 ──
+[2026-06-13 17:32:49] ① OBSERVE: 内存1.4GB | Chrome14 | Git3 | 扫描50问题
+[2026-06-13 17:32:52] BRAIN: 思考→wait (系统正常)
+[2026-06-13 17:32:52] ③ EXEC: skip
+[2026-06-13 17:32:52] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:32:52] ④⑤ REFLECT+MEM: total=57 | rate=25% | lessons=15
+[2026-06-13 17:32:52] brain-cycle-end
+[2026-06-13 17:32:52] loop#3 ← brain done
+[2026-06-13 17:32:52] sleeping 60s...
+[2026-06-13 17:33:38] loop#19 → spawning gbt-brain.js
+[2026-06-13 17:33:38] brain-cycle-start
+[2026-06-13 17:33:38] ── 周期 #58 ──
+[2026-06-13 17:33:38] ① OBSERVE: 内存0.9GB | Chrome14 | Git4 | 扫描50问题
+[2026-06-13 17:33:43] BRAIN: 思考→clean_chrome (内存0.9GB)
+[2026-06-13 17:33:43] EXEC: clean_chrome 清理Chrome缓存(只清缓存,不动浏览器窗口)
+[2026-06-13 17:33:51] ③ EXEC: OK chrome-cache-cleaned:10
+[2026-06-13 17:33:51] REFLECT: 成功经验 → 动作 clean_chrome 成功，chrome-cache-cleaned:10
+[2026-06-13 17:33:51] ④⑤ REFLECT+MEM: total=58 | rate=26% | lessons=16
+[2026-06-13 17:33:51] brain-cycle-end
+[2026-06-13 17:33:51] loop#19 ← brain done
+[2026-06-13 17:33:51] sleeping 60s...
+[2026-06-13 17:33:52] loop#4 → spawning gbt-brain.js
+[2026-06-13 17:33:52] brain-cycle-start
+[2026-06-13 17:33:52] ── 周期 #59 ──
+[2026-06-13 17:33:52] ① OBSERVE: 内存1.5GB | Chrome14 | Git4 | 扫描50问题
+[2026-06-13 17:33:55] BRAIN: 思考→git_backup (4个文件未提交)
+[2026-06-13 17:33:55] EXEC: git_backup 提交未保存改动

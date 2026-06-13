@@ -1,1 +1,20 @@
  
+# GBTxiaotudou 审计日志
+# 启动时间: 2026-06-13T17:33:38.212Z
+# 配置: {
+  "enabled": true,
+  "logPath": "C:\\Users\\ADMIN\\.gbt\\audit\\audit.log",
+  "maxFileSize": 52428800,
+  "maxFiles": 10,
+  "compress": true,
+  "enableHashing": true,
+  "enableEncryption": false,
+  "retentionDays": 90,
+  "enableRealTimeAlert": true,
+  "alertThresholds": {
+    "criticalEventsPerMinute": 5,
+    "failedAuthAttemptsPerMinute": 10,
+    "policyViolationsPerHour": 3
+  }
+}
+
