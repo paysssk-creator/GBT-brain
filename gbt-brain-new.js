@@ -138,45 +138,45 @@ async function reflect(s, d, r) {
   return mem;
 }
 
-async function brainLoop() {
-  log('══════════════════════════════════════');
-  log('⚕ GBT AI自主大脑 v4.0 启动');
-  log('   模型: ' + (API_KEY ? API_MODEL : '规则引擎'));
-  log('   间隔: ' + (INTERVAL / 1000) + '秒');
-  log('   闭环: 观察→思考→执行→反思→记忆');
-  log('══════════════════════════════════════');
-  let cycle = 0;
-  while (true) {
-    cycle++;
-    log('── 周期 #' + cycle + ' ──');
+// 循环大脑: 外部 gbt-brain-loop.js 每60s调一次, 每次都是全新进程=最新代码
+async function brainCycle(cycleNum) {
+  log('── 周期 #' + cycleNum + ' ──');
 
-    // ① 观察
-    const s = observe();
-    log('① OBSERVE: 内存' + s.memory?.freeGB + 'GB | Chrome' + s.chromeTabs + ' | Git' + s.gitDirty + ' | 扫描' + (s.lastScan?.total || 0) + '问题');
+  // ① 观察
+  const s = observe();
+  log('① OBSERVE: 内存' + s.memory?.freeGB + 'GB | Chrome' + s.chromeTabs + ' | Git' + s.gitDirty + ' | 扫描' + (s.lastScan?.total || 0) + '问题');
 
-    // ② 思考
-    const d = await think(s);
+  // ② 思考
+  const d = await think(s);
 
-    // ③ 执行
-    let r = null;
-    if (d.action && d.action !== 'wait') {
-      r = execute(d.action);
-      log('③ EXEC: ' + (r.ok ? '✅' : '❌') + ' ' + (r.output || r.error || ''));
-    } else {
-      log('③ EXEC: 跳过');
-    }
-
-    // ④ 反思
-    const mem = await reflect(s, d, r);
-
-    // ⑤ 记忆总结
-    const total = mem.stats.totalActions;
-    const rate = total > 0 ? (mem.stats.successActions / total * 100).toFixed(0) : '-';
-    log('④⑤ REFLECT+MEM: 总' + total + '次 | 成功率' + rate + '% | 教训' + mem.learnings.length + '条');
-
-    log('SLEEP: ' + (INTERVAL / 1000) + 's...');
-    await new Promise(r => setTimeout(r, INTERVAL));
+  // ③ 执行
+  let r = null;
+  if (d.action && d.action !== 'wait') {
+    r = execute(d.action);
+    log('③ EXEC: ' + (r.ok ? 'OK' : 'FAIL') + ' ' + (r.output || r.error || ''));
+  } else {
+    log('③ EXEC: skip');
   }
+
+  // ④ 反思
+  const mem = await reflect(s, d, r);
+
+  // ⑤ 记忆总结
+  const total = mem.stats.totalActions;
+  const rate = total > 0 ? (mem.stats.successActions / total * 100).toFixed(0) : '-';
+  log('④⑤ REFLECT+MEM: total=' + total + ' | rate=' + rate + '% | lessons=' + mem.learnings.length);
 }
 
-brainLoop().catch(e => { log('CRASH: ' + e.message); process.exit(1); });
+// 单轮模式: 执行一周期后退出, 由 gbt-brain-loop.js 重启
+(async () => {
+  log('brain-cycle-start');
+  try {
+    const mem = loadMem();
+    const cycle = (mem.stats?.totalActions || 0) + 1;
+    await brainCycle(cycle);
+  } catch (e) {
+    log('CYCLE_CRASH: ' + e.message);
+  }
+  log('brain-cycle-end');
+  process.exit(0);
+})();

@@ -597,6 +597,84 @@
       },
       "result": "wait",
       "detail": ""
+    },
+    {
+      "cycle": 24,
+      "ts": "2026-06-13T17:05:37.356Z",
+      "state": {
+        "ts": "2026-06-13T17:05:34.224Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "75%"
+        },
+        "processes": 300,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 5
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "Git未提交改动为5，超过阈值3，触发git_backup规则"
+      },
+      "result": "success",
+      "detail": "[master e16df1c] auto-brain-backup\n 5 files changed, 77 insertions(+), 25 deletions(-)\n delete mode 100644 _trace_zombie.js\n delete mode 100644 trace.ps1\n delete mode 100644 trace2.ps1"
+    },
+    {
+      "cycle": 25,
+      "ts": "2026-06-13T17:06:40.767Z",
+      "state": {
+        "ts": "2026-06-13T17:06:37.368Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.9",
+          "totalGB": "7.4",
+          "usagePct": "74%"
+        },
+        "processes": 297,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 26,
+      "ts": "2026-06-13T17:07:44.713Z",
+      "state": {
+        "ts": "2026-06-13T17:07:40.772Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.7",
+          "totalGB": "7.4",
+          "usagePct": "77%"
+        },
+        "processes": 299,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
     }
   ],
   "learnings": [
@@ -625,11 +703,16 @@
       "ts": "2026-06-13T17:03:30.732Z",
       "action": "git_backup",
       "learning": "动作 git_backup 成功，[master 0e46408] auto-brain-backup\n 4 files change"
+    },
+    {
+      "ts": "2026-06-13T17:05:37.356Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master e16df1c] auto-brain-backup\n 5 files change"
     }
   ],
   "stats": {
-    "totalActions": 23,
-    "successActions": 4,
+    "totalActions": 26,
+    "successActions": 5,
     "failActions": 1
   }
 }
