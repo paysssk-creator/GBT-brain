@@ -1,0 +1,3 @@
+#!/bin/bash
+# GBT - ?????? (Linux/Mac/WSL)
+~/.gbt/vector_db/launch.sh "$@"
