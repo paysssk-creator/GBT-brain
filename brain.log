@@ -422,3 +422,54 @@ Node.js v24.15.0
 [2026-06-13 17:12:18] ① OBSERVE: 内存1.7GB | Chrome1 | Git4 | 扫描50问题
 [2026-06-13 17:12:21] BRAIN: 思考→git_backup (Git未提交4个>3，触发备份规则)
 [2026-06-13 17:12:21] EXEC: git_backup 提交未保存改动
+[2026-06-13 17:12:21] ③ EXEC: OK [master 06b623b] auto-brain-backup
+ 4 files changed, 50 insertions(+), 6 deletions(-)
+ delete mode 100644 _check.js
+[2026-06-13 17:12:21] REFLECT: 成功经验 → 动作 git_backup 成功，[master 06b623b] auto-brain-backup
+ 4 files change
+[2026-06-13 17:12:21] ④⑤ REFLECT+MEM: total=35 | rate=23% | lessons=9
+[2026-06-13 17:12:21] brain-cycle-end
+[2026-06-13 17:12:21] loop#4 ← brain done
+[2026-06-13 17:12:21] sleeping 60s...
+[2026-06-13 17:13:21] loop#5 → spawning gbt-brain.js
+[2026-06-13 17:13:21] brain-cycle-start
+[2026-06-13 17:13:21] ── 周期 #36 ──
+[2026-06-13 17:13:22] ① OBSERVE: 内存1.5GB | Chrome1 | Git3 | 扫描50问题
+[2026-06-13 17:13:25] BRAIN: 思考→wait (系统正常)
+[2026-06-13 17:13:25] ③ EXEC: skip
+[2026-06-13 17:13:25] REFLECT: 本轮无操作，系统稳定
+[2026-06-13 17:13:25] ④⑤ REFLECT+MEM: total=36 | rate=22% | lessons=9
+[2026-06-13 17:13:25] brain-cycle-end
+[2026-06-13 17:13:25] loop#5 ← brain done
+[2026-06-13 17:13:25] sleeping 60s...
+[2026-06-13 17:14:22] ==========================================
+[2026-06-13 17:14:22] GBT AI Loop Brain v5.1 — Self-Preserving
+[2026-06-13 17:14:22]    mode: one-shot brain + restart = fresh code
+[2026-06-13 17:14:22]    interval: 60s
+[2026-06-13 17:14:22]    preserve: log<1MB | memory<100learnings | context guard
+[2026-06-13 17:14:22] ==========================================
+[2026-06-13 17:14:22] loop#1 → spawning gbt-brain.js
+[2026-06-13 17:14:22] brain-cycle-start
+[2026-06-13 17:14:22] ── 周期 #37 ──
+[2026-06-13 17:14:23] ① OBSERVE: 内存0.7GB | Chrome17 | Git5 | 扫描50问题
+[2026-06-13 17:14:26] BRAIN: 思考→clean_chrome (内存0.7GB)
+[2026-06-13 17:14:26] EXEC: clean_chrome 清理Chrome残留
+[2026-06-13 17:14:26] ③ EXEC: OK �ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 4480 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 34860 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 34408 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 26036 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 26716 �Ľ��̡�
+�ɹ�: ����ֹ PID 
+[2026-06-13 17:14:26] REFLECT: 成功经验 → 动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�
+�ɹ�: ����ֹ PID Ϊ 44
+[2026-06-13 17:14:26] ④⑤ REFLECT+MEM: total=37 | rate=24% | lessons=10
+[2026-06-13 17:14:26] brain-cycle-end
+[2026-06-13 17:14:26] loop#1 ← brain done
+[2026-06-13 17:14:26] sleeping 60s...
+[2026-06-13 17:15:26] loop#2 → spawning gbt-brain.js
+[2026-06-13 17:15:26] brain-cycle-start
+[2026-06-13 17:15:26] ── 周期 #38 ──
+[2026-06-13 17:15:27] ① OBSERVE: 内存2.7GB | Chrome1 | Git5 | 扫描50问题
+[2026-06-13 17:15:29] BRAIN: 思考→git_backup (Git未提交5个，超过阈值3，触发git_backup以保证代码安全)
+[2026-06-13 17:15:29] EXEC: git_backup 提交未保存改动

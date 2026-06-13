@@ -883,6 +883,84 @@
       },
       "result": "success",
       "detail": "[master 7669553] auto-brain-backup\n 4 files changed, 277 insertions(+), 2 deletions(-)\n create mode 100644 _check.js"
+    },
+    {
+      "cycle": 35,
+      "ts": "2026-06-13T17:12:21.838Z",
+      "state": {
+        "ts": "2026-06-13T17:12:18.389Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.7",
+          "totalGB": "7.4",
+          "usagePct": "78%"
+        },
+        "processes": 301,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 4
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "Git未提交4个>3，触发备份规则"
+      },
+      "result": "success",
+      "detail": "[master 06b623b] auto-brain-backup\n 4 files changed, 50 insertions(+), 6 deletions(-)\n delete mode 100644 _check.js"
+    },
+    {
+      "cycle": 36,
+      "ts": "2026-06-13T17:13:25.683Z",
+      "state": {
+        "ts": "2026-06-13T17:13:21.932Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.5",
+          "totalGB": "7.4",
+          "usagePct": "80%"
+        },
+        "processes": 301,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 37,
+      "ts": "2026-06-13T17:14:26.470Z",
+      "state": {
+        "ts": "2026-06-13T17:14:22.423Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.7",
+          "totalGB": "7.4",
+          "usagePct": "91%"
+        },
+        "processes": 321,
+        "chromeTabs": 17,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 5
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "内存0.7GB"
+      },
+      "result": "success",
+      "detail": "�ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 4480 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34860 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34408 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26036 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26716 �Ľ��̡�\r\n�ɹ�: ����ֹ PID "
     }
   ],
   "learnings": [
@@ -926,11 +1004,21 @@
       "ts": "2026-06-13T17:11:45.659Z",
       "action": "git_backup",
       "learning": "动作 git_backup 成功，[master 7669553] auto-brain-backup\n 4 files change"
+    },
+    {
+      "ts": "2026-06-13T17:12:21.838Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master 06b623b] auto-brain-backup\n 4 files change"
+    },
+    {
+      "ts": "2026-06-13T17:14:26.470Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 44"
     }
   ],
   "stats": {
-    "totalActions": 34,
-    "successActions": 7,
+    "totalActions": 37,
+    "successActions": 9,
     "failActions": 1
   }
 }

@@ -207,3 +207,4 @@
 {"ts":"2026-06-13T17:10:34.379Z","user":"ADMIN","category":"process","action":"kill","data":{"target":"node.exe"}}
 {"ts":"2026-06-13T17:11:45.839Z","user":"ADMIN","category":"process","action":"kill","data":{"target":24612}}
 {"ts":"2026-06-13T17:11:46.128Z","user":"ADMIN","category":"process","action":"kill","data":{"target":22512}}
+{"ts":"2026-06-13T17:14:03.623Z","user":"ADMIN","category":"process","action":"kill","data":{"target":10404}}
