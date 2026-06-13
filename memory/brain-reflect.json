@@ -961,6 +961,344 @@
       },
       "result": "success",
       "detail": "�ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 4480 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34860 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34408 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26036 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26716 �Ľ��̡�\r\n�ɹ�: ����ֹ PID "
+    },
+    {
+      "cycle": 38,
+      "ts": "2026-06-13T17:15:30.089Z",
+      "state": {
+        "ts": "2026-06-13T17:15:26.589Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.7",
+          "totalGB": "7.4",
+          "usagePct": "63%"
+        },
+        "processes": 304,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 5
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "Git未提交5个，超过阈值3，触发git_backup以保证代码安全"
+      },
+      "result": "success",
+      "detail": "[master 66bf12a] auto-brain-backup\n 5 files changed, 344 insertions(+), 11 deletions(-)\n create mode 100644 gbt-brain-compressor.js"
+    },
+    {
+      "cycle": 39,
+      "ts": "2026-06-13T17:16:34.183Z",
+      "state": {
+        "ts": "2026-06-13T17:16:30.149Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.5",
+          "totalGB": "7.4",
+          "usagePct": "66%"
+        },
+        "processes": 303,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 40,
+      "ts": "2026-06-13T17:17:39.299Z",
+      "state": {
+        "ts": "2026-06-13T17:17:34.617Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.1",
+          "totalGB": "7.4",
+          "usagePct": "85%"
+        },
+        "processes": 321,
+        "chromeTabs": 17,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 41,
+      "ts": "2026-06-13T17:18:43.497Z",
+      "state": {
+        "ts": "2026-06-13T17:18:39.579Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.4",
+          "totalGB": "7.4",
+          "usagePct": "81%"
+        },
+        "processes": 322,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "内存1.4GB未低于1GB阈值，Chrome进程13未超过20，Git未提交2未超过3，且无超过6小时未扫描的提示，故无触发条件，执行等待。"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 42,
+      "ts": "2026-06-13T17:19:47.929Z",
+      "state": {
+        "ts": "2026-06-13T17:19:43.774Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.0",
+          "totalGB": "7.4",
+          "usagePct": "86%"
+        },
+        "processes": 317,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 43,
+      "ts": "2026-06-13T17:20:52.194Z",
+      "state": {
+        "ts": "2026-06-13T17:20:48.014Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.4",
+          "totalGB": "7.4",
+          "usagePct": "81%"
+        },
+        "processes": 316,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "内存充足（1.4GB/7.4GB），Chrome进程13（<20），Git未提交2（<3），无扫描超时信号，系统状态正常，进入等待。"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 44,
+      "ts": "2026-06-13T17:21:56.287Z",
+      "state": {
+        "ts": "2026-06-13T17:21:52.266Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.4",
+          "totalGB": "7.4",
+          "usagePct": "81%"
+        },
+        "processes": 316,
+        "chromeTabs": 13,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 45,
+      "ts": "2026-06-13T17:23:00.143Z",
+      "state": {
+        "ts": "2026-06-13T17:22:56.539Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.8",
+          "totalGB": "7.4",
+          "usagePct": "76%"
+        },
+        "processes": 318,
+        "chromeTabs": 12,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "内存和Chrome进程数未超阈值，Git未提交数不足3，无超6小时未扫描信息，按规则进入等待"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 46,
+      "ts": "2026-06-13T17:24:04.670Z",
+      "state": {
+        "ts": "2026-06-13T17:24:00.468Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.0",
+          "totalGB": "7.4",
+          "usagePct": "86%"
+        },
+        "processes": 312,
+        "chromeTabs": 12,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 47,
+      "ts": "2026-06-13T17:25:08.424Z",
+      "state": {
+        "ts": "2026-06-13T17:25:04.747Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "2.1",
+          "totalGB": "7.4",
+          "usagePct": "71%"
+        },
+        "processes": 310,
+        "chromeTabs": 12,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "AI推导"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 48,
+      "ts": "2026-06-13T17:26:12.229Z",
+      "state": {
+        "ts": "2026-06-13T17:26:08.510Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.5",
+          "totalGB": "7.4",
+          "usagePct": "80%"
+        },
+        "processes": 310,
+        "chromeTabs": 12,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
+    },
+    {
+      "cycle": 49,
+      "ts": "2026-06-13T17:27:16.703Z",
+      "state": {
+        "ts": "2026-06-13T17:27:12.515Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.0",
+          "totalGB": "7.4",
+          "usagePct": "86%"
+        },
+        "processes": 321,
+        "chromeTabs": 22,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "22个Chrome进程"
+      },
+      "result": "success",
+      "detail": "�ɹ�: ����ֹ PID Ϊ 35440 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26080 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 24636 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34268 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 28744 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 34064 �Ľ��̡�\r\n�ɹ�: ����ֹ PID"
+    },
+    {
+      "cycle": 50,
+      "ts": "2026-06-13T17:28:21.855Z",
+      "state": {
+        "ts": "2026-06-13T17:28:17.136Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "0.9",
+          "totalGB": "7.4",
+          "usagePct": "88%"
+        },
+        "processes": 323,
+        "chromeTabs": 21,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 3
+      },
+      "decision": {
+        "action": "clean_chrome",
+        "reason": "内存仅0.9GB（<1GB）且Chrome进程21个（>20），触发清理Chrome残留规则"
+      },
+      "result": "success",
+      "detail": "�ɹ�: ����ֹ PID Ϊ 22320 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26588 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 30292 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 11524 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 27188 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 24060 �Ľ��̡�\r\n�ɹ�: ����ֹ PID"
     }
   ],
   "learnings": [
@@ -1014,11 +1352,26 @@
       "ts": "2026-06-13T17:14:26.470Z",
       "action": "clean_chrome",
       "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 31380 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 44"
+    },
+    {
+      "ts": "2026-06-13T17:15:30.089Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master 66bf12a] auto-brain-backup\n 5 files change"
+    },
+    {
+      "ts": "2026-06-13T17:27:16.703Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 35440 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26"
+    },
+    {
+      "ts": "2026-06-13T17:28:21.855Z",
+      "action": "clean_chrome",
+      "learning": "动作 clean_chrome 成功，�ɹ�: ����ֹ PID Ϊ 22320 �Ľ��̡�\r\n�ɹ�: ����ֹ PID Ϊ 26"
     }
   ],
   "stats": {
-    "totalActions": 37,
-    "successActions": 9,
+    "totalActions": 50,
+    "successActions": 12,
     "failActions": 1
   }
 }
