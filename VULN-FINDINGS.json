@@ -1,12 +1,12 @@
 {
-  "scanTime": "2026-06-13T15:49:39.191Z",
+  "scanTime": "2026-06-13T17:35:36.931Z",
   "project": "C:\\Users\\ADMIN\\.gbt",
   "summary": {
-    "total": 50,
+    "total": 54,
     "high": 12,
     "medium": 2,
-    "low": 21,
-    "info": 15
+    "low": 24,
+    "info": 16
   },
   "findings": [
     {
@@ -184,6 +184,33 @@
       "ruleId": "QUAL-001",
       "ruleName": "console-log",
       "severity": "low",
+      "file": "gbt-brain-compressor.js",
+      "line": 23,
+      "snippet": "console.log('[' + ts + '] [compressor] ' + msg);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "gbt-brain-compressor.js",
+      "line": 151,
+      "snippet": "console.log(JSON.stringify(result));",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
+      "file": "gbt-brain-loop.js",
+      "line": 23,
+      "snippet": "console.log(line);",
+      "description": "生产代码中残留 console.log"
+    },
+    {
+      "ruleId": "QUAL-001",
+      "ruleName": "console-log",
+      "severity": "low",
       "file": "gbt-brain-new.js",
       "line": 32,
       "snippet": "function log(msg) { const ts = new Date().toISOString().slice(0, 19).replace('T', ' '); const line = `[${ts}] ${msg}`; c",
@@ -203,7 +230,7 @@
       "ruleName": "console-log",
       "severity": "low",
       "file": "gbt-brain.js",
-      "line": 33,
+      "line": 32,
       "snippet": "function log(msg) { const ts = new Date().toISOString().slice(0, 19).replace('T', ' '); const line = `[${ts}] ${msg}`; c",
       "description": "生产代码中残留 console.log"
     },
@@ -212,7 +239,7 @@
       "ruleName": "deprecated-api",
       "severity": "low",
       "file": "gbt-brain.js",
-      "line": 95,
+      "line": 70,
       "snippet": "const req = https.request({ hostname: url.hostname, path: url.pathname, method: 'POST', headers: { 'Content-Type': 'appl",
       "description": "使用了已废弃的 API / 属性"
     },
@@ -232,6 +259,24 @@
       "file": "desktop\\noVNC\\utils\\genkeysymdef.js",
       "line": 41,
       "snippet": "const buf = fs.readFileSync(filename);",
+      "description": "同步 I/O 可能阻塞事件循环"
+    },
+    {
+      "ruleId": "QUAL-003",
+      "ruleName": "sync-io-bottleneck",
+      "severity": "info",
+      "file": "gbt-brain-compressor.js",
+      "line": 66,
+      "snippet": "mem = JSON.parse(fs.readFileSync(MEM, 'utf-8'));",
+      "description": "同步 I/O 可能阻塞事件循环"
+    },
+    {
+      "ruleId": "QUAL-003",
+      "ruleName": "sync-io-bottleneck",
+      "severity": "info",
+      "file": "gbt-brain-compressor.js",
+      "line": 106,
+      "snippet": "fs.writeFileSync(MEM, JSON.stringify(mem, null, 2), 'utf-8');",
       "description": "同步 I/O 可能阻塞事件循环"
     },
     {
@@ -293,7 +338,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 22,
+      "line": 21,
       "snippet": "const p = JSON.parse(fs.readFileSync(pf, 'utf-8'));",
       "description": "同步 I/O 可能阻塞事件循环"
     },
@@ -302,7 +347,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 35,
+      "line": 34,
       "snippet": "function sh(cmd, timeout = 5000) { try { return execSync(cmd, { encoding: 'utf-8', timeout, stdio: 'pipe' }).trim(); } c",
       "description": "同步 I/O 可能阻塞事件循环"
     },
@@ -311,7 +356,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 43,
+      "line": 42,
       "snippet": "try { const vf = path.join(GBT, 'VULN-FINDINGS.json'); if (fs.existsSync(vf)) { const v = JSON.parse(fs.readFileSync(vf,",
       "description": "同步 I/O 可能阻塞事件循环"
     },
@@ -320,16 +365,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 65,
-      "snippet": "function loadGoals() { try { return JSON.parse(fs.readFileSync(GOALS_FILE, 'utf-8')); } catch { return { goals: [] }; } ",
-      "description": "同步 I/O 可能阻塞事件循环"
-    },
-    {
-      "ruleId": "QUAL-003",
-      "ruleName": "sync-io-bottleneck",
-      "severity": "info",
-      "file": "gbt-brain.js",
-      "line": 130,
+      "line": 103,
       "snippet": "const o = execSync(c.cmd, { encoding: 'utf-8', timeout: 60000, stdio: 'pipe', cwd: GBT }).trim().slice(0, 200);",
       "description": "同步 I/O 可能阻塞事件循环"
     },
@@ -338,7 +374,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 136,
+      "line": 109,
       "snippet": "function loadMem() { try { return fs.existsSync(MEM_FILE) ? JSON.parse(fs.readFileSync(MEM_FILE, 'utf-8')) : { cycles: [",
       "description": "同步 I/O 可能阻塞事件循环"
     },
@@ -347,7 +383,7 @@
       "ruleName": "sync-io-bottleneck",
       "severity": "info",
       "file": "gbt-brain.js",
-      "line": 137,
+      "line": 110,
       "snippet": "function saveMem(m) { try { fs.writeFileSync(MEM_FILE, JSON.stringify(m, null, 2)); } catch {} }",
       "description": "同步 I/O 可能阻塞事件循环"
     },

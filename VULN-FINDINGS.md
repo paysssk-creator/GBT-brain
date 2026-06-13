@@ -1,6 +1,6 @@
 # 代码扫描报告
 
-**时间**: 2026-06-13T15:49:39.191Z
+**时间**: 2026-06-13T17:35:36.931Z
 **项目**: C:\Users\ADMIN\.gbt
 
 ## 摘要
@@ -8,9 +8,9 @@
 |--------|------|
 | 🔴 High | 12 |
 | 🟠 Medium | 2 |
-| 🟡 Low | 21 |
-| 🔵 Info | 15 |
-| **总计** | **50** |
+| 🟡 Low | 24 |
+| 🔵 Info | 16 |
+| **总计** | **54** |
 
 ## 发现列表
 - **[MEDIUM]** `desktop\noVNC\app\ui.js:1188` — 直接设置 innerHTML 可能导致 XSS
@@ -89,6 +89,18 @@
   ```
   console.log(out);
   ```
+- **[LOW]** `gbt-brain-compressor.js:23` — 生产代码中残留 console.log
+  ```
+  console.log('[' + ts + '] [compressor] ' + msg);
+  ```
+- **[LOW]** `gbt-brain-compressor.js:151` — 生产代码中残留 console.log
+  ```
+  console.log(JSON.stringify(result));
+  ```
+- **[LOW]** `gbt-brain-loop.js:23` — 生产代码中残留 console.log
+  ```
+  console.log(line);
+  ```
 - **[LOW]** `gbt-brain-new.js:32` — 生产代码中残留 console.log
   ```
   function log(msg) { const ts = new Date().toISOString().slice(0, 19).replace('T', ' '); const line = `[${ts}] ${msg}`; c
@@ -97,11 +109,11 @@
   ```
   const req = https.request({ hostname: url.hostname, path: url.pathname, method: 'POST', headers: { 'Content-Type': 'appl
   ```
-- **[LOW]** `gbt-brain.js:33` — 生产代码中残留 console.log
+- **[LOW]** `gbt-brain.js:32` — 生产代码中残留 console.log
   ```
   function log(msg) { const ts = new Date().toISOString().slice(0, 19).replace('T', ' '); const line = `[${ts}] ${msg}`; c
   ```
-- **[LOW]** `gbt-brain.js:95` — 使用了已废弃的 API / 属性
+- **[LOW]** `gbt-brain.js:70` — 使用了已废弃的 API / 属性
   ```
   const req = https.request({ hostname: url.hostname, path: url.pathname, method: 'POST', headers: { 'Content-Type': 'appl
   ```
@@ -112,6 +124,14 @@
 - **[INFO]** `desktop\noVNC\utils\genkeysymdef.js:41` — 同步 I/O 可能阻塞事件循环
   ```
   const buf = fs.readFileSync(filename);
+  ```
+- **[INFO]** `gbt-brain-compressor.js:66` — 同步 I/O 可能阻塞事件循环
+  ```
+  mem = JSON.parse(fs.readFileSync(MEM, 'utf-8'));
+  ```
+- **[INFO]** `gbt-brain-compressor.js:106` — 同步 I/O 可能阻塞事件循环
+  ```
+  fs.writeFileSync(MEM, JSON.stringify(mem, null, 2), 'utf-8');
   ```
 - **[INFO]** `gbt-brain-new.js:21` — 同步 I/O 可能阻塞事件循环
   ```
@@ -137,31 +157,27 @@
   ```
   function saveMem(m) { try { fs.writeFileSync(MEM_FILE, JSON.stringify(m, null, 2)); } catch {} }
   ```
-- **[INFO]** `gbt-brain.js:22` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:21` — 同步 I/O 可能阻塞事件循环
   ```
   const p = JSON.parse(fs.readFileSync(pf, 'utf-8'));
   ```
-- **[INFO]** `gbt-brain.js:35` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:34` — 同步 I/O 可能阻塞事件循环
   ```
   function sh(cmd, timeout = 5000) { try { return execSync(cmd, { encoding: 'utf-8', timeout, stdio: 'pipe' }).trim(); } c
   ```
-- **[INFO]** `gbt-brain.js:43` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:42` — 同步 I/O 可能阻塞事件循环
   ```
   try { const vf = path.join(GBT, 'VULN-FINDINGS.json'); if (fs.existsSync(vf)) { const v = JSON.parse(fs.readFileSync(vf,
   ```
-- **[INFO]** `gbt-brain.js:65` — 同步 I/O 可能阻塞事件循环
-  ```
-  function loadGoals() { try { return JSON.parse(fs.readFileSync(GOALS_FILE, 'utf-8')); } catch { return { goals: [] }; } 
-  ```
-- **[INFO]** `gbt-brain.js:130` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:103` — 同步 I/O 可能阻塞事件循环
   ```
   const o = execSync(c.cmd, { encoding: 'utf-8', timeout: 60000, stdio: 'pipe', cwd: GBT }).trim().slice(0, 200);
   ```
-- **[INFO]** `gbt-brain.js:136` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:109` — 同步 I/O 可能阻塞事件循环
   ```
   function loadMem() { try { return fs.existsSync(MEM_FILE) ? JSON.parse(fs.readFileSync(MEM_FILE, 'utf-8')) : { cycles: [
   ```
-- **[INFO]** `gbt-brain.js:137` — 同步 I/O 可能阻塞事件循环
+- **[INFO]** `gbt-brain.js:110` — 同步 I/O 可能阻塞事件循环
   ```
   function saveMem(m) { try { fs.writeFileSync(MEM_FILE, JSON.stringify(m, null, 2)); } catch {} }
   ```

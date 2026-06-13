@@ -1,6 +1,8 @@
 {
   "voice_call_key": "18124a9c-0665-4e65-8e17-b13f00052885",
-  "note": "打电话/接电话密钥, 待启用时充值使用",
+  "note": "打电话/接电话密钥, 已启用并集成到gbt-brain",
   "stored": "2026-06-13",
-  "status": "inactive"
+  "activated": "2026-06-14",
+  "status": "active",
+  "integrated_with": "gbt-brain"
 }
