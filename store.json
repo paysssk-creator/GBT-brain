@@ -58,9 +58,15 @@
         }
       }
     }
+    {
+      "timestamp": "2026-06-14T00:00:00.000Z",
+      "summary": "全面升级launcher.html出租网页：暗色赛博朋克主题、粒子背景、17个MCP能力展示、快捷启动中心、系统状态面板、终端模拟、全局搜索(Ctrl+K)、域名gbtxiaotudou.com集成、移动端响应式、Toast通知系统",
+      "files": ["launcher.html", "store.json"]
+    }
   ],
   "memories": [],
   "config": {},
-  "lastEvolve": "2026-06-13T20:00:27.220Z",
-  "totalEvolves": 2
+  "lastEvolve": "2026-06-14T00:00:00.000Z",
+  "totalEvolves": 3,
+  "domain": "gbtxiaotudou.com"
 }
