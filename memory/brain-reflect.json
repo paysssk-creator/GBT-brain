@@ -545,6 +545,58 @@
       },
       "result": "wait",
       "detail": ""
+    },
+    {
+      "cycle": 22,
+      "ts": "2026-06-13T17:03:30.732Z",
+      "state": {
+        "ts": "2026-06-13T17:03:27.543Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.9",
+          "totalGB": "7.4",
+          "usagePct": "74%"
+        },
+        "processes": 298,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 4
+      },
+      "decision": {
+        "action": "git_backup",
+        "reason": "Git未提交改动数为4，超过阈值3，触发自动备份"
+      },
+      "result": "success",
+      "detail": "[master 0e46408] auto-brain-backup\n 4 files changed, 90 insertions(+), 2 deletions(-)\n create mode 100644 trace2.ps1"
+    },
+    {
+      "cycle": 23,
+      "ts": "2026-06-13T17:04:34.213Z",
+      "state": {
+        "ts": "2026-06-13T17:04:30.754Z",
+        "host": "DESKTOP-VPVP0BP",
+        "memory": {
+          "freeGB": "1.9",
+          "totalGB": "7.4",
+          "usagePct": "74%"
+        },
+        "processes": 298,
+        "chromeTabs": 1,
+        "lastScan": {
+          "total": 50,
+          "high": 12
+        },
+        "gitDirty": 2
+      },
+      "decision": {
+        "action": "wait",
+        "reason": "系统正常"
+      },
+      "result": "wait",
+      "detail": ""
     }
   ],
   "learnings": [
@@ -568,11 +620,16 @@
       "ts": "2026-06-13T17:02:18.548Z",
       "action": "git_backup",
       "learning": "动作 git_backup 成功，[master 2b39c55] auto-brain-backup\n 1 file changed"
+    },
+    {
+      "ts": "2026-06-13T17:03:30.732Z",
+      "action": "git_backup",
+      "learning": "动作 git_backup 成功，[master 0e46408] auto-brain-backup\n 4 files change"
     }
   ],
   "stats": {
-    "totalActions": 21,
-    "successActions": 3,
+    "totalActions": 23,
+    "successActions": 4,
     "failActions": 1
   }
 }
